@@ -1,6 +1,8 @@
 #!/bin/bash
 echo "Start make..."
-timeout 600 make
+timeout 600 ./Configure linux-x86_64 $*
+timeout 600 make depend
+timeout 600 make 
 
 RETVAL=$?
 echo $RETVAL
