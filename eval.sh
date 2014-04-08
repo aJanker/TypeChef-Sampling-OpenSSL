@@ -8,7 +8,7 @@ filesToProcess() {
 }
 
 flags=" --bdd \
-  	--writePi --serializeAST --study openssl --writeBuildCondition \
+  	--study busybox --reuseAST --refEval rename --refLink $path/CLinking.interface \
 	-I /usr/local/include \
 	-I /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed \
 	-I /usr/lib/gcc/x86_64-linux-gnu/4.6/include \
@@ -26,7 +26,7 @@ flags=" --bdd \
 filesToProcess|while read i; do
          echo "Analysing $path/openssl/$i.c"
          echo "With settings: $flags"
-         ../TypeChef/cRefactor.sh $path/openssl/$i.pi $flags
+         ../TypeChef/cRefactor.sh $path/openssl/$i.c $flags
          done
 
 exit
