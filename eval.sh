@@ -20,8 +20,7 @@ flags=" --bdd \
 	--platfromHeader $path/openssl/platform.h \
         --featureModelDimacs $path/openssl/OpenSSL.dimacs \
 	--include $path/openssl/partial_configuration.h \
-	--recordTiming --parserstatistics --lexNoStdout \
-	-D OPENSSL_THREADS -D _REENTRANT -D DSO_DLFCN -D HAVE_DLFCN_H -D L_ENDIAN -D TERMIO -D OPENSSL_IA32_SSE2 -D OPENSSL_BN_ASM_MONT -D OPENSSL_BN_ASM_MONT5 -D OPENSSL_BN_ASM_GF2m -D SHA1_ASM -D SHA256_ASM -D SHA512_ASM -D MD5_ASM -D AES_ASM -D VPAES_ASM -D BSAES_ASM -D WHIRLPOOL_ASM -D GHASH_ASM"
+	--recordTiming --parserstatistics --lexNoStdout"
 
 filesToProcess|while read i; do
          echo "Analysing $path/openssl/$i.c"
