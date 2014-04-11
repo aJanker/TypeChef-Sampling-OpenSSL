@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Start make..."
-timeout 600 make depend
-timeout 600 make 
+pwd | tee currentDir
+timeout 600 make | tee currentmake 
 
 RETVAL=$?
 echo $RETVAL

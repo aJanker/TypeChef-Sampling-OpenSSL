@@ -1,6 +1,8 @@
 #!/bin/bash
 echo "Start config generation..."
+make clean
 timeout 600 ./Configure linux-x86_64 $*
+make depend
 
 RETVAL=$?
 echo $RETVAL
