@@ -9,28 +9,29 @@ cd openssl
 
 #Ref first
 i=0
-filesToProcess|while read feature; do
-        echo "Verifiying $1"
-        echo "With features: $feature"
         echo "$i"_ref.config
-        ./genConfig.sh $feature | tee $i_ref.config
-        ./build.sh | tee $i_ref.build
-        ./runtest.sh | tee $i_ref.test
-        i=`expr $i + 1`
-        done
+
+ filesToProcess|while read feature; do
+         echo "Verifiying $1"
+         echo "With features: $feature"
+         ./genConfig.sh $feature | tee "$i"_ref.config
+         ./build.sh | tee "$i"_ref.build
+         ./runtest.sh | tee "$i"_ref.test
+         i=`expr $i + 1`
+         done
 
 #Clean
-git checkout .
+ git checkout .
 
-#Org Next
-i=0
-filesToProcess|while read feature; do
-	    echo "Verifiying $1"
-        echo "With features: $feature"
-        ./genConfig.sh $feature | tee $i_org.config
-        ./build.sh | tee $i_org.build
-	 	./runtest.sh | tee $i_org.test
-        i=`expr $i + 1`
-        done
+ #Org Next
+ i=0
+ filesToProcess|while read feature; do
+ 	    echo "Verifiying $1"
+         echo "With features: $feature"
+         ./genConfig.sh $feature | tee "$i"_org.config
+         ./build.sh | tee "$i"_org.build
+ 	 	./runtest.sh | tee "$i"_org.test
+         i=`expr $i + 1`
+         done
 
 exit
