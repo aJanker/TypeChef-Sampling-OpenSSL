@@ -12,7 +12,7 @@ echo "-=== FILTERED PARAMS ===-"
 FILTEREDPARAMS=`$ABSPATH/filterargs $@`
 FNAME=`$ABSPATH/filtername $@ | tr -d ' '`
 
-`pwd`/$FNAME
+FNAME=`pwd`/$FNAME
 
 
 echo $FILTEREDPARAMS
