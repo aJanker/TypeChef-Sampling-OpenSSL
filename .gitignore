@@ -1,4 +1,12 @@
 *.ast
+*.pi
+*.tunit
+*.dbg
+*.err
+*.time
+*.vaareport
+*.ser
+*.tunit_plain
 
 .DS_Store
 .AppleDouble
