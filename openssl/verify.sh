@@ -12,7 +12,7 @@ i=0
 filesToProcess|while read feature; do
         echo "Verifiying $1"
         echo "With features: $feature"
-        echo `$i`_ref.config
+        echo "$i"_ref.config
         ./genConfig.sh $feature | tee $i_ref.config
         ./build.sh | tee $i_ref.build
         ./runtest.sh | tee $i_ref.test
