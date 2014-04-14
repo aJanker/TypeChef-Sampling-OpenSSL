@@ -6,9 +6,9 @@ make depend
 
 RETVAL=$?
 echo $RETVAL
-[ $RETVAL -eq 0 ] && echo "Success_Build"
+[ $RETVAL -eq 0 ] && echo "Success_Config"
 [ $RETVAL -eq 124 ] && echo "Failure_Timeout"
-[ $RETVAL -ne 0 ] && echo "Failure_Build"
+[ $RETVAL -ne 0 ] && echo "Failure_Config"
 
 exit
 
