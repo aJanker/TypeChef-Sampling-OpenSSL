@@ -6,6 +6,7 @@ filesToProcess() {
 }
 
 cd openssl
+mkdir --p "$1"
 
 #Ref first
 i=0
