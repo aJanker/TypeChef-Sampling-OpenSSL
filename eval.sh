@@ -22,7 +22,7 @@ filesToProcess|while read i; do
          echo "With settings: $flags"
          ../TypeChef/cRefactor.sh $path/openssl/$i.c $flags
          echo "Verifiying $path/result/$i"
-	 openssl/verify.sh $path/result/$i
+	 openssl/verify.sh $path/result/$i.c
          done
 
 exit
