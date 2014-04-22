@@ -17,7 +17,7 @@ flags=" --bdd \
 	--include $path/openssl/partial_configuration.h \
 	--recordTiming --parserstatistics --lexNoStdout"
 
-filesToProcess|while read i; do
+filesToProcess $1|while read i; do
          echo "Analysing $path/openssl/$i.c"
          echo "With settings: $flags"
          ../TypeChef/cRefactor.sh $path/openssl/$i.c $flags
