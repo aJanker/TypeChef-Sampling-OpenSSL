@@ -1,6 +1,6 @@
 #!/bin/sh
 
-timeout 600 make test
+timeout 600 make test 2>&1
 
 RETVAL=$?
 [ $RETVAL -eq 0 ] && echo "Success_Test"
