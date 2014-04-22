@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Start make..."
 set -o pipefail
-timeout 600 make | tee currentmake 
+timeout 600 make 2>&1 | tee currentmake 
 
 RETVAL=$?
 echo $RETVAL
