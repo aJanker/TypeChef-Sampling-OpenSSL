@@ -4,11 +4,11 @@ path=$(cd "$(dirname "$0")"; pwd)
 
 filesToProcess() {
   local listFile=openssl_files
-  cat $listFile
+  cat $listFile | sed -n "${1}~8p" 
 }
 
 flags=" --bdd \
-  	--study openssl --reuseAST --refEval rename --refLink $path/CLinking.interface \
+  	--study openssl --reuseAST --refEval extract --refLink $path/CLinking.interface \
         -I $path/openssl \
 	 -I $path/openssl/include
 	-I $path/openssl/include/openssl

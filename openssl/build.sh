@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Start make..."
-pwd | tee currentDir
+set -o pipefail
 timeout 600 make | tee currentmake 
 
 RETVAL=$?
