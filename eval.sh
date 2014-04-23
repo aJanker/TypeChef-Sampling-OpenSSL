@@ -4,7 +4,7 @@ path=$(cd "$(dirname "$0")"; pwd)
 
 filesToProcess() {
   local listFile=openssl_files
-  cat $listFile | sed -n "${1}~7p" 
+  cat $listFile | sed -n "${1}~8p" 
 }
 
 flags=" --bdd \
