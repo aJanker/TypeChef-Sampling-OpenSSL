@@ -1,9 +1,11 @@
 #!/bin/bash 
 
 path=$(cd "$(dirname "$0")"; pwd)
+echo "$path"
+cd $path
 
 filesToProcess() {
-  local listFile=openssl_files
+  local listFile=$path/openssl_files
   cat $listFile | sed -n "${1}~8p" 
 }
 
