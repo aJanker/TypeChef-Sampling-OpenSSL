@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 filesToProcess() {
-  local listFile=../configFlags
+  local listFile=configFlags
   cat $listFile
 }
 
