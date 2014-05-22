@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (2)
+	__assert_fail: (const char*, const char*, unsigned int, const char*) => void 		if (def(MODES_DEBUG)&!def(NDEBUG))		at file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83
+	memset: (void*, signed int, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ctr128.c:240:2
+exports (2)
+	CRYPTO_ctr128_encrypt: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, unsigned char*, unsigned int*, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ctr128.c:114:5
+	CRYPTO_ctr128_encrypt_ctr32: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, unsigned char*, unsigned int*, (const unsigned char*, unsigned char*, unsigned long, const void*, const unsigned char*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ctr128.c:190:5

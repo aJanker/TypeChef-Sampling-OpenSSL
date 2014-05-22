@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	SHA1_Final: (unsigned char*, struct SHAstate_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_dss.c:78:10
+	SHA1_Init: (struct SHAstate_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_dss.c:72:10
+	SHA1_Update: (struct SHAstate_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_dss.c:75:10
+exports (1)
+	EVP_dss: () => const struct env_md_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_dss.c:96:14

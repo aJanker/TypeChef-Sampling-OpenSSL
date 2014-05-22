@@ -1,0 +1,35 @@
+fm True
+features (0)
+	
+imports (14)
+	ASN1_OBJECT_free: (struct asn1_object_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:312:82, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:312:82, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:312:82, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:312:82
+	ASN1_OCTET_STRING_free: (struct asn1_string_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:114:2
+	ASN1_OCTET_STRING_new: () => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:119:34
+	ASN1_STRING_set: (struct asn1_string_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:120:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:104:8
+	ASN1_UTF8STRING_free: (struct asn1_string_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:98:2
+	ASN1_UTF8STRING_new: () => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:103:34
+	ASN1_item_d2i: (struct ASN1_VALUE_st**, const unsigned char**, signed long, const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:160, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:160
+	ASN1_item_free: (struct ASN1_VALUE_st*, const struct ASN1_ITEM_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:194, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:194
+	ASN1_item_i2d: (struct ASN1_VALUE_st*, unsigned char**, const struct ASN1_ITEM_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:289, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:289
+	ASN1_item_new: (const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:117, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:117
+	OBJ_dup: (const struct asn1_object_st*) => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:152:15, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:141:15
+	sk_new_null: () => struct stack_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:138:50, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:138:50
+	sk_pop_free: (struct stack_st*, (void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:170:46, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:170:46
+	sk_push: (struct stack_st*, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:150:36, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:150:36
+exports (16)
+	X509_CERT_AUX_free: (struct x509_cert_aux_st*) => void 		if True		at string literal: X509_CERT_AUX_free:1:0
+	X509_CERT_AUX_new: () => struct x509_cert_aux_st* 		if True		at string literal: X509_CERT_AUX_new:1:0
+	X509_CERT_PAIR_free: (struct x509_cert_pair_st*) => void 		if True		at string literal: X509_CERT_PAIR_free:1:0
+	X509_CERT_PAIR_new: () => struct x509_cert_pair_st* 		if True		at string literal: X509_CERT_PAIR_new:1:0
+	X509_add1_reject_object: (struct x509_st*, struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:148:4
+	X509_add1_trust_object: (struct x509_st*, struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:137:4
+	X509_alias_get0: (struct x509_st*, signed int*) => unsigned char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:123:15
+	X509_alias_set1: (struct x509_st*, unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:91:4
+	X509_keyid_get0: (struct x509_st*, signed int*) => unsigned char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:130:15
+	X509_keyid_set1: (struct x509_st*, unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:107:4
+	X509_reject_clear: (struct x509_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:167:5
+	X509_trust_clear: (struct x509_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_x509a.c:159:5
+	d2i_X509_CERT_AUX: (struct x509_cert_aux_st**, const unsigned char**, signed long) => struct x509_cert_aux_st* 		if True		at string literal: d2i_X509_CERT_AUX:1:0
+	d2i_X509_CERT_PAIR: (struct x509_cert_pair_st**, const unsigned char**, signed long) => struct x509_cert_pair_st* 		if True		at string literal: d2i_X509_CERT_PAIR:1:0
+	i2d_X509_CERT_AUX: (struct x509_cert_aux_st*, unsigned char**) => signed int 		if True		at string literal: i2d_X509_CERT_AUX:1:0
+	i2d_X509_CERT_PAIR: (struct x509_cert_pair_st*, unsigned char**) => signed int 		if True		at string literal: i2d_X509_CERT_PAIR:1:0

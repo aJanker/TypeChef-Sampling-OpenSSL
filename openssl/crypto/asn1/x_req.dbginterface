@@ -1,0 +1,20 @@
+fm True
+features (0)
+	
+imports (6)
+	ASN1_item_d2i: (struct ASN1_VALUE_st**, const unsigned char**, signed long, const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:160, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:160
+	ASN1_item_dup: (const struct ASN1_ITEM_st*, void*) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:887:103
+	ASN1_item_free: (struct ASN1_VALUE_st*, const struct ASN1_ITEM_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:194, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:194
+	ASN1_item_i2d: (struct ASN1_VALUE_st*, unsigned char**, const struct ASN1_ITEM_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:289, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:289
+	ASN1_item_new: (const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:117, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:117
+	sk_new_null: () => struct stack_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:138:50
+exports (9)
+	X509_REQ_INFO_free: (struct X509_req_info_st*) => void 		if True		at string literal: X509_REQ_INFO_free:1:0
+	X509_REQ_INFO_new: () => struct X509_req_info_st* 		if True		at string literal: X509_REQ_INFO_new:1:0
+	X509_REQ_dup: (struct X509_req_st*) => struct X509_req_st* 		if True		at string literal: X509_REQ_dup:1:0
+	X509_REQ_free: (struct X509_req_st*) => void 		if True		at string literal: X509_REQ_free:1:0
+	X509_REQ_new: () => struct X509_req_st* 		if True		at string literal: X509_REQ_new:1:0
+	d2i_X509_REQ: (struct X509_req_st**, const unsigned char**, signed long) => struct X509_req_st* 		if True		at string literal: d2i_X509_REQ:1:0
+	d2i_X509_REQ_INFO: (struct X509_req_info_st**, const unsigned char**, signed long) => struct X509_req_info_st* 		if True		at string literal: d2i_X509_REQ_INFO:1:0
+	i2d_X509_REQ: (struct X509_req_st*, unsigned char**) => signed int 		if True		at string literal: i2d_X509_REQ:1:0
+	i2d_X509_REQ_INFO: (struct X509_req_info_st*, unsigned char**) => signed int 		if True		at string literal: i2d_X509_REQ_INFO:1:0

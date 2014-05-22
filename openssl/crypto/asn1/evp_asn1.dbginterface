@@ -1,0 +1,26 @@
+fm True
+features (0)
+	
+imports (17)
+	ASN1_INTEGER_get: (const struct asn1_string_st*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:170:7
+	ASN1_INTEGER_set: (struct asn1_string_st*, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:110:1
+	ASN1_STRING_free: (struct asn1_string_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:598:32, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:614:36, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:120:2
+	ASN1_STRING_new: () => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:116:10
+	ASN1_STRING_set: (struct asn1_string_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:118:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:619:39
+	ASN1_STRING_type_new: (signed int) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:612:57
+	ASN1_TYPE_set: (struct asn1_type_st*, signed int, void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:131:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:70:1
+	ASN1_const_check_infinite_end: (const unsigned char**, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1_mac.h:124:77
+	ASN1_object_size: (signed int, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:114:6
+	ASN1_put_object: (unsigned char**, signed int, signed int, signed int, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:127:1
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	asn1_GetSequence: (struct asn1_const_ctx_st*, signed long*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1_mac.h:106:42
+	d2i_ASN1_INTEGER: (struct asn1_string_st**, const unsigned char**, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:162:9
+	d2i_ASN1_OCTET_STRING: (struct asn1_string_st**, const unsigned char**, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:165:9
+	i2d_ASN1_INTEGER: (struct asn1_string_st*, unsigned char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:128:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:111:6
+	i2d_ASN1_bytes: (struct asn1_string_st*, unsigned char**, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:621:40, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:621:40
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:179:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:92:1
+exports (4)
+	ASN1_TYPE_get_int_octetstring: (struct asn1_type_st*, signed long*, unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:138:4
+	ASN1_TYPE_get_octetstring: (struct asn1_type_st*, unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:75:4
+	ASN1_TYPE_set_int_octetstring: (struct asn1_type_st*, signed long, unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:96:4
+	ASN1_TYPE_set_octetstring: (struct asn1_type_st*, unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/evp_asn1.c:64:4

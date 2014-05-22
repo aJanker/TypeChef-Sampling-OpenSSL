@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	RIPEMD160_Final: (unsigned char*, struct RIPEMD160state_st*) => signed int 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_ripemd.c:80:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_ripemd.c:80:10
+	RIPEMD160_Init: (struct RIPEMD160state_st*) => signed int 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_ripemd.c:74:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_ripemd.c:74:10
+	RIPEMD160_Update: (struct RIPEMD160state_st*, const void*, unsigned long) => signed int 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_ripemd.c:77:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_ripemd.c:77:10
+exports (1)
+	EVP_ripemd160: () => const struct env_md_st* 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_ripemd.c:98:14

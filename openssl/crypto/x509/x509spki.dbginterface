@@ -1,0 +1,19 @@
+fm True
+features (0)
+	
+imports (10)
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_DecodeBlock: (unsigned char*, const unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:89:12
+	EVP_EncodeBlock: (unsigned char*, const unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:118:1
+	X509_PUBKEY_get: (struct X509_pubkey_st*) => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:73:8
+	X509_PUBKEY_set: (struct X509_pubkey_st**, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:66:8
+	d2i_NETSCAPE_SPKI: (struct Netscape_spki_st**, const unsigned char**, signed long) => struct Netscape_spki_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:97:8
+	i2d_NETSCAPE_SPKI: (struct Netscape_spki_st*, unsigned char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:117:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:109:11
+	strlen: (const char*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:84:20
+exports (4)
+	NETSCAPE_SPKI_b64_decode: (const char*, signed int) => struct Netscape_spki_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:78:16
+	NETSCAPE_SPKI_b64_encode: (struct Netscape_spki_st*) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:104:7
+	NETSCAPE_SPKI_get_pubkey: (struct Netscape_spki_st*) => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:69:10
+	NETSCAPE_SPKI_set_pubkey: (struct Netscape_spki_st*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509spki.c:63:4

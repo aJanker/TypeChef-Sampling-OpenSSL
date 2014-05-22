@@ -1,0 +1,10 @@
+fm True
+features (0)
+	
+imports (4)
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:75:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:75:1
+	RIPEMD160_Final: (unsigned char*, struct RIPEMD160state_st*) => signed int 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:74:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:74:1
+	RIPEMD160_Init: (struct RIPEMD160state_st*) => signed int 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:71:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:71:6
+	RIPEMD160_Update: (struct RIPEMD160state_st*, const void*, unsigned long) => signed int 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:73:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:73:1
+exports (1)
+	RIPEMD160: (const unsigned char*, unsigned long, unsigned char*) => unsigned char* 		if !def(OPENSSL_NO_RIPEMD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ripemd/rmd_one.c:64:15

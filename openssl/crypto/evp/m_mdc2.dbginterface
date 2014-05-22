@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	MDC2_Final: (unsigned char*, struct mdc2_ctx_st*) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_mdc2.c:81:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_mdc2.c:81:10
+	MDC2_Init: (struct mdc2_ctx_st*) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_mdc2.c:75:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_mdc2.c:75:10
+	MDC2_Update: (struct mdc2_ctx_st*, const unsigned char*, unsigned long) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_mdc2.c:78:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_mdc2.c:78:10
+exports (1)
+	EVP_mdc2: () => const struct env_md_st* 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_mdc2.c:99:14

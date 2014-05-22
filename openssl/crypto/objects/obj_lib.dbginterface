@@ -1,0 +1,14 @@
+fm True
+features (0)
+	
+imports (7)
+	ASN1_OBJECT_new: () => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:77:3
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	memcmp: (const void*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:128:8
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:107:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:98:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:87:2
+	strlen: (const char*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:104:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:95:4
+exports (2)
+	OBJ_cmp: (const struct asn1_object_st*, const struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:122:4
+	OBJ_dup: (const struct asn1_object_st*) => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/objects/obj_lib.c:65:13

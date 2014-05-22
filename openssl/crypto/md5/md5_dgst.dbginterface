@@ -1,0 +1,12 @@
+fm True
+features (0)
+	
+imports (3)
+	md5_block_asm_data_order: (struct MD5state_st*, const void*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:71:31, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:71:31, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:71:31, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:71:31, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:71:31
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:335:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:316:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:306:3
+	memset: (void*, signed int, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_dgst.c:76:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:374:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:361:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:357:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:312:3
+exports (4)
+	MD5_Final: (unsigned char*, struct MD5state_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:86:20
+	MD5_Init: (struct MD5state_st*) => signed int 		if True		at string literal: MD5_Init:1:0
+	MD5_Transform: (struct MD5state_st*, const unsigned char*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:85:24
+	MD5_Update: (struct MD5state_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md5/md5_locl.h:84:21

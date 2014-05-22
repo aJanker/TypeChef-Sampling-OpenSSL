@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	DES_encrypt1: (unsigned int*, struct DES_ks*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cbc_cksm.c:85:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cbc_cksm.c:85:2
+exports (1)
+	DES_cbc_cksum: (const unsigned char*, unsigned char[]*, signed long, struct DES_ks*, unsigned char[]*) => unsigned int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cbc_cksm.c:61:9

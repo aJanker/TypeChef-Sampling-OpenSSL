@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	DES_set_key_unchecked: (unsigned char[]*, struct DES_ks*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:109:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:109:1
+	DES_xcbc_encrypt: (const unsigned char*, unsigned char*, signed long, struct DES_ks*, unsigned char[]*, unsigned char[]*, unsigned char[]*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:131:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:131:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:121:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:121:2
+	memcpy: (void*, const void*, unsigned long) => void* 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:111:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:110:1
+exports (1)
+	EVP_desx_cbc: () => const struct evp_cipher_st* 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_xcbc_d.c:99:18

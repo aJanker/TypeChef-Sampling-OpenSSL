@@ -1,0 +1,11 @@
+fm True
+features (0)
+	
+imports (2)
+	memcpy: (void*, const void*, unsigned long) => void* 		if !def(OPENSSL_NO_SHA0)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:335:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:335:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:316:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:316:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:306:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:306:3
+	memset: (void*, signed int, unsigned long) => void* 		if !def(OPENSSL_NO_SHA0)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:131:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:131:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:374:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:374:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:361:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:361:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:357:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:357:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:312:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:312:3
+exports (4)
+	SHA_Final: (unsigned char*, struct SHAstate_st*) => signed int 		if !def(OPENSSL_NO_SHA0)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:83:34
+	SHA_Init: (struct SHAstate_st*) => signed int 		if !def(OPENSSL_NO_SHA0)		at string literal: SHA_Init:1:0
+	SHA_Transform: (struct SHAstate_st*, const unsigned char*) => void 		if !def(OPENSSL_NO_SHA0)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:82:34
+	SHA_Update: (struct SHAstate_st*, const void*, unsigned long) => signed int 		if !def(OPENSSL_NO_SHA0)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:81:34

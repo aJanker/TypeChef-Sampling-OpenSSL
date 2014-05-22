@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (2)
+	DES_encrypt3: (unsigned int*, struct DES_ks*, struct DES_ks*, struct DES_ks*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:214:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:214:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:172:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:172:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:116:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:116:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:90:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:90:4
+	memmove: (void*, const void*, unsigned long) => void* 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:231:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:231:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:193:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:193:4
+exports (2)
+	DES_ede3_cfb64_encrypt: (const unsigned char*, unsigned char*, signed long, struct DES_ks*, struct DES_ks*, struct DES_ks*, unsigned char[]*, signed int*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:67:5
+	DES_ede3_cfb_encrypt: (const unsigned char*, unsigned char*, signed int, signed long, struct DES_ks*, struct DES_ks*, struct DES_ks*, unsigned char[]*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/cfb64ede.c:149:5

@@ -1,0 +1,674 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                ERR_put_error
+            </name>
+            <type>
+                <function><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><signed>
+        <int/>
+    </signed></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BIO_new
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_method_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                131
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                131
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                X509_ALGOR_get0
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <struct isUnion="false">
+        asn1_object_st
+    </struct>
+    </pointer>
+    </pointer></param><param><pointer>
+        <signed>
+        <int/>
+    </signed>
+    </pointer></param><param><pointer>
+        <pointer>
+        <void/>
+    </pointer>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        X509_algor_st
+    </struct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                124
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                124
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BIO_f_zlib
+            </name>
+            <type>
+                <function><ret><pointer>
+        <struct isUnion="false">
+        bio_method_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                131
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                131
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                131
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                131
+            </line>
+            <col>
+                16
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                X509_ALGOR_set0
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        X509_algor_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        asn1_object_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <void/>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                97
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                97
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                OBJ_nid2obj
+            </name>
+            <type>
+                <function><param><signed>
+        <int/>
+    </signed></param><ret><pointer>
+        <struct isUnion="false">
+        asn1_object_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                101
+            </line>
+            <col>
+                38
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                101
+            </line>
+            <col>
+                38
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                98
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                98
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                98
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                98
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                92
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                92
+            </line>
+            <col>
+                20
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                OBJ_obj2nid
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        asn1_object_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                125
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                125
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                117
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                117
+            </line>
+            <col>
+                5
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                CMS_ContentInfo_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        CMS_ContentInfo_st
+    </struct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                108
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                108
+            </line>
+            <col>
+                2
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                CMS_ContentInfo_new
+            </name>
+            <type>
+                <function><ret><pointer>
+        <struct isUnion="false">
+        CMS_ContentInfo_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                83
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                83
+            </line>
+            <col>
+                7
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                ASN1_item_new
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h
+            </file>
+            <line>
+                1056
+            </line>
+            <col>
+                36
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h
+            </file>
+            <line>
+                1056
+            </line>
+            <col>
+                36
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                cms_CompressedData_init_bio
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        CMS_ContentInfo_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                113
+            </line>
+            <col>
+                5
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                cms_CompressedData_create
+            </name>
+            <type>
+                <function><param><signed>
+        <int/>
+    </signed></param><ret><pointer>
+        <struct isUnion="false">
+        CMS_ContentInfo_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_CMS) &amp;&amp; definedEx(ZLIB))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_cd.c
+            </file>
+            <line>
+                70
+            </line>
+            <col>
+                17
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	OPENSSL_cpuid_setup: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/c_all.c:82:1
+	OpenSSL_add_all_ciphers: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/c_all.c:83:1
+	OpenSSL_add_all_digests: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/c_all.c:84:1
+exports (1)
+	OPENSSL_add_all_algorithms_noconf: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/c_all.c:75:5

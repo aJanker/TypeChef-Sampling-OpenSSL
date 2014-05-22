@@ -1,0 +1,22 @@
+fm True
+features (0)
+	
+imports (13)
+	ASN1_item_d2i: (struct ASN1_VALUE_st**, const unsigned char**, signed long, const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:160
+	ASN1_item_free: (struct ASN1_VALUE_st*, const struct ASN1_ITEM_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:194
+	ASN1_item_i2d: (struct ASN1_VALUE_st*, unsigned char**, const struct ASN1_ITEM_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:289
+	ASN1_item_new: (const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:117
+	ERR_add_error_data: (signed int, ...) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/x509v3.h:382:29
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	X509V3_add_value_bool: (const char*, signed int, struct stack_st_CONF_VALUE**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_bcons.c:92:1
+	X509V3_add_value_int: (const char*, struct asn1_string_st*, struct stack_st_CONF_VALUE**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_bcons.c:93:1
+	X509V3_get_value_bool: (struct {Map(section -> List((True,(AtomicNamedDeclarator(List(Opt(True,Pointer(List()))),Id(section),List()),One(CType(CPointer(CSignUnspecified(CChar())),false,false,false))))), name -> List((True,(AtomicNamedDeclarator(List(Opt(True,Pointer(List()))),Id(name),List()),One(CType(CPointer(CSignUnspecified(CChar())),false,false,false))))), value -> List((True,(AtomicNamedDeclarator(List(Opt(True,Pointer(List()))),Id(value),List()),One(CType(CPointer(CSignUnspecified(CChar())),false,false,false))))))}*, signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_bcons.c:110:7
+	X509V3_get_value_int: (struct {Map(section -> List((True,(AtomicNamedDeclarator(List(Opt(True,Pointer(List()))),Id(section),List()),One(CType(CPointer(CSignUnspecified(CChar())),false,false,false))))), name -> List((True,(AtomicNamedDeclarator(List(Opt(True,Pointer(List()))),Id(name),List()),One(CType(CPointer(CSignUnspecified(CChar())),false,false,false))))), value -> List((True,(AtomicNamedDeclarator(List(Opt(True,Pointer(List()))),Id(value),List()),One(CType(CPointer(CSignUnspecified(CChar())),false,false,false))))))}*, struct asn1_string_st**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_bcons.c:112:7
+	sk_num: (const struct stack_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30
+	sk_value: (const struct stack_st*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43
+	strcmp: (const char*, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_bcons.c:111:13, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_bcons.c:109:6
+exports (4)
+	BASIC_CONSTRAINTS_free: (struct BASIC_CONSTRAINTS_st*) => void 		if True		at string literal: BASIC_CONSTRAINTS_free:1:0
+	BASIC_CONSTRAINTS_new: () => struct BASIC_CONSTRAINTS_st* 		if True		at string literal: BASIC_CONSTRAINTS_new:1:0
+	d2i_BASIC_CONSTRAINTS: (struct BASIC_CONSTRAINTS_st**, const unsigned char**, signed long) => struct BASIC_CONSTRAINTS_st* 		if True		at string literal: d2i_BASIC_CONSTRAINTS:1:0
+	i2d_BASIC_CONSTRAINTS: (struct BASIC_CONSTRAINTS_st*, unsigned char**) => signed int 		if True		at string literal: i2d_BASIC_CONSTRAINTS:1:0

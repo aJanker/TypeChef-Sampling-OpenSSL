@@ -1,0 +1,14 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (8)
+	SSL_alert_desc_string: (signed int) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:413:12
+	SSL_alert_desc_string_long: (signed int) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:454:12
+	SSL_alert_type_string: (signed int) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:402:12
+	SSL_alert_type_string_long: (signed int) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:391:12
+	SSL_rstate_string: (const struct ssl_st*) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:555:12
+	SSL_rstate_string_long: (const struct ssl_st*) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:238:12
+	SSL_state_string: (const struct ssl_st*) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:252:12
+	SSL_state_string_long: (const struct ssl_st*) => const char* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_stat.c:88:12

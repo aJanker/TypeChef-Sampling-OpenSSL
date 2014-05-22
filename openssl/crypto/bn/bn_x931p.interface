@@ -1,0 +1,1016 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                BN_mod_sub
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                152
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_CTX_get
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                255
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                253
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                214
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                119
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                117
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                115
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                113
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                110
+            </line>
+            <col>
+                7
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_CTX_end
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                267
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                226
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                187
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_add
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                177
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                155
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                147
+            </line>
+            <col>
+                16
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_CTX_start
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                251
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                213
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                108
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_sub_word
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><unsigned>
+        <long/>
+    </unsigned></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                166
+            </line>
+            <col>
+                7
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_GENCB_call
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bn_gencb_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                181
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                163
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                87
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                80
+            </line>
+            <col>
+                2
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_is_prime_fasttest_ex
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <struct isUnion="false">
+        bn_gencb_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                175
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                82
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_sub
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                221
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                144
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_mul
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                141
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                127
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_mod_inverse
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                138
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                132
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_gcd
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                168
+            </line>
+            <col>
+                7
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_add_word
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><unsigned>
+        <long/>
+    </unsigned></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                84
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                75
+            </line>
+            <col>
+                24
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_num_bits
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                222
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_rand
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                259
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                257
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                218
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                210
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_copy
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                164
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                73
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                BN_X931_generate_prime_ex
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bn_gencb_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                243
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                BN_X931_generate_Xpq
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                196
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                BN_X931_derive_prime_ex
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <struct isUnion="false">
+        bignum_ctx
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bn_gencb_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_x931p.c
+            </file>
+            <line>
+                96
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

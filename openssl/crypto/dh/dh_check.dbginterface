@@ -1,0 +1,18 @@
+fm True
+features (0)
+	
+imports (11)
+	BN_CTX_free: (struct bignum_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:117:18
+	BN_CTX_new: () => struct bignum_ctx* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:81:5
+	BN_cmp: (const struct bignum_st*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:135:5, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:131:5
+	BN_copy: (struct bignum_st*, const struct bignum_st*) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:133:1
+	BN_free: (struct bignum_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:140:16, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:118:16
+	BN_is_prime_ex: (const struct bignum_st*, signed int, struct bignum_ctx*, struct bn_gencb_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:112:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:107:6
+	BN_mod_word: (const struct bignum_st*, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:100:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:88:4
+	BN_new: () => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:128:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:83:3
+	BN_rshift1: (struct bignum_st*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:111:7
+	BN_set_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:130:1
+	BN_sub_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:134:1
+exports (2)
+	DH_check: (const struct dh_st*, signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:73:4
+	DH_check_pub_key: (const struct dh_st*, const struct bignum_st*, signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_check.c:122:4

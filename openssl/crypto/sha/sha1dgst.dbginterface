@@ -1,0 +1,12 @@
+fm True
+features (0)
+	
+imports (3)
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:335:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:316:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:306:3
+	memset: (void*, signed int, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:131:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:374:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:361:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:357:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md32_common.h:312:3
+	sha1_block_data_order: (struct SHAstate_st*, const void*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:96:34, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:96:34, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:96:34, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:96:34, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:96:34
+exports (4)
+	SHA1_Final: (unsigned char*, struct SHAstate_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:94:34
+	SHA1_Init: (struct SHAstate_st*) => signed int 		if True		at string literal: SHA1_Init:1:0
+	SHA1_Transform: (struct SHAstate_st*, const unsigned char*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:93:34
+	SHA1_Update: (struct SHAstate_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha_locl.h:92:34

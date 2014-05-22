@@ -1,0 +1,19 @@
+fm True
+features (0)
+	
+imports (13)
+	BN_CTX_end: (struct bignum_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:117:2
+	BN_CTX_free: (struct bignum_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:119:2
+	BN_CTX_get: (struct bignum_ctx*) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:76:14
+	BN_CTX_new: () => struct bignum_ctx* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:68:18
+	BN_CTX_start: (struct bignum_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:75:1
+	EC_GROUP_check_discriminant: (const struct ec_group_st*, struct bignum_ctx*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:79:6
+	EC_GROUP_get_order: (const struct ec_group_st*, struct bignum_st*, struct bignum_ctx*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:99:6
+	EC_POINT_free: (struct ec_point_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:121:2
+	EC_POINT_is_at_infinity: (const struct ec_group_st*, const struct ec_point_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:107:6
+	EC_POINT_is_on_curve: (const struct ec_group_st*, const struct ec_point_st*, struct bignum_ctx*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:91:6
+	EC_POINT_mul: (const struct ec_group_st*, struct ec_point_st*, const struct bignum_st*, const struct ec_point_st*, const struct bignum_st*, struct bignum_ctx*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:106:6
+	EC_POINT_new: (const struct ec_group_st*) => struct ec_point_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:98:14
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+exports (1)
+	EC_GROUP_check: (const struct ec_group_st*, struct bignum_ctx*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_check.c:59:4

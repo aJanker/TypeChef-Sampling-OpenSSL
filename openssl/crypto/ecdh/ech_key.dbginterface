@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	ecdh_check: (struct ec_key_st*) => struct ecdh_data_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ecdh/ech_key.c:79:19
+exports (1)
+	ECDH_compute_key: (void*, unsigned long, const struct ec_point_st*, struct ec_key_st*, (const void*, unsigned long, void*, unsigned long*) => void**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ecdh/ech_key.c:75:4

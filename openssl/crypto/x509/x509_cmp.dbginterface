@@ -1,0 +1,49 @@
+fm True
+features (0)
+	
+imports (22)
+	ASN1_STRING_cmp: (const struct asn1_string_st*, const struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:601:32
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_Digest: (const void*, unsigned long, unsigned char*, unsigned int*, const struct env_md_st*, struct engine_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:227:6
+	EVP_DigestFinal_ex: (struct env_md_ctx_st*, unsigned char*, unsigned int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:254:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:98:6
+	EVP_DigestInit_ex: (struct env_md_ctx_st*, const struct env_md_st*, struct engine_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:252:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:90:6
+	EVP_DigestUpdate: (struct env_md_ctx_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:253:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:95:5, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:92:6
+	EVP_MD_CTX_cleanup: (struct env_md_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:255:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:104:1
+	EVP_MD_CTX_init: (struct env_md_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:250:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:87:1
+	EVP_MD_CTX_set_flags: (struct env_md_ctx_st*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:251:1
+	EVP_PKEY_cmp: (const struct evp_pkey_st*, const struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:322:8
+	EVP_PKEY_free: (struct evp_pkey_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:340:2
+	EVP_md5: () => const struct env_md_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:252:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:252:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:90:30, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:90:30
+	EVP_sha1: () => const struct env_md_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:227:58, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:227:58
+	X509_NAME_oneline: (struct X509_name_st*, char*, signed int) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:88:3
+	X509_PUBKEY_get: (struct X509_pubkey_st*) => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:305:8
+	X509_check_purpose: (struct x509_st*, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:184:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:183:1
+	i2d_X509_NAME: (struct X509_name_st*, unsigned char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:249:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:226:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:206:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:199:8
+	memcmp: (const void*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:216:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:186:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:127:8
+	sk_num: (const struct stack_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30
+	sk_value: (const struct stack_st*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43
+	strlen: (const char*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:89:5
+exports (22)
+	X509_CRL_cmp: (const struct X509_crl_st*, const struct X509_crl_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:119:4
+	X509_CRL_match: (const struct X509_crl_st*, const struct X509_crl_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:125:4
+	X509_NAME_cmp: (const struct X509_name_st*, const struct X509_name_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:191:4
+	X509_NAME_hash: (struct X509_name_st*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:220:14
+	X509_NAME_hash_old: (struct X509_name_st*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:242:14
+	X509_check_private_key: (struct x509_st*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:314:4
+	X509_cmp: (const struct x509_st*, const struct x509_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:180:4
+	X509_find_by_issuer_and_serial: (struct stack_st_X509*, struct X509_name_st*, struct asn1_string_st*) => struct x509_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:265:6
+	X509_find_by_subject: (struct stack_st_X509*, struct X509_name_st*) => struct x509_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:287:6
+	X509_get0_pubkey_bitstr: (const struct x509_st*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:308:17
+	X509_get_issuer_name: (struct x509_st*) => struct X509_name_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:131:11
+	X509_get_pubkey: (struct x509_st*) => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:301:10
+	X509_get_serialNumber: (struct x509_st*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:153:14
+	X509_get_subject_name: (struct x509_st*) => struct X509_name_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:148:11
+	X509_issuer_and_serial_cmp: (const struct x509_st*, const struct x509_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:67:4
+	X509_issuer_and_serial_hash: (struct x509_st*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:80:14
+	X509_issuer_name_cmp: (const struct x509_st*, const struct x509_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:109:4
+	X509_issuer_name_hash: (struct x509_st*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:136:14
+	X509_issuer_name_hash_old: (struct x509_st*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:142:14
+	X509_subject_name_cmp: (const struct x509_st*, const struct x509_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:114:4
+	X509_subject_name_hash: (struct x509_st*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:158:14
+	X509_subject_name_hash_old: (struct x509_st*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_cmp.c:164:14

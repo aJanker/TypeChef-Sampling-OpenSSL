@@ -1,0 +1,22 @@
+fm True
+features (0)
+	
+imports (11)
+	ASN1_TYPE_free: (struct asn1_type_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_attrib.c:116:18
+	ASN1_TYPE_new: () => struct asn1_type_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_attrib.c:109:10
+	ASN1_TYPE_set: (struct asn1_type_st*, signed int, void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_attrib.c:112:1
+	ASN1_item_d2i: (struct ASN1_VALUE_st**, const unsigned char**, signed long, const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:160
+	ASN1_item_dup: (const struct ASN1_ITEM_st*, void*) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:887:103
+	ASN1_item_free: (struct ASN1_VALUE_st*, const struct ASN1_ITEM_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:194
+	ASN1_item_i2d: (struct ASN1_VALUE_st*, unsigned char**, const struct ASN1_ITEM_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:289
+	ASN1_item_new: (const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:117
+	OBJ_nid2obj: (signed int) => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_attrib.c:106:13
+	sk_new_null: () => struct stack_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:138:50
+	sk_push: (struct stack_st*, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:150:36
+exports (6)
+	X509_ATTRIBUTE_create: (signed int, signed int, void*) => struct x509_attributes_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_attrib.c:99:16
+	X509_ATTRIBUTE_dup: (struct x509_attributes_st*) => struct x509_attributes_st* 		if True		at string literal: X509_ATTRIBUTE_dup:1:0
+	X509_ATTRIBUTE_free: (struct x509_attributes_st*) => void 		if True		at string literal: X509_ATTRIBUTE_free:1:0
+	X509_ATTRIBUTE_new: () => struct x509_attributes_st* 		if True		at string literal: X509_ATTRIBUTE_new:1:0
+	d2i_X509_ATTRIBUTE: (struct x509_attributes_st**, const unsigned char**, signed long) => struct x509_attributes_st* 		if True		at string literal: d2i_X509_ATTRIBUTE:1:0
+	i2d_X509_ATTRIBUTE: (struct x509_attributes_st*, unsigned char**) => signed int 		if True		at string literal: i2d_X509_ATTRIBUTE:1:0

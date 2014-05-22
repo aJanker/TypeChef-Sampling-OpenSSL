@@ -1,0 +1,10 @@
+fm True
+features (0)
+	
+imports (4)
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_PKEY2PKCS8: (struct evp_pkey_st*) => struct pkcs8_priv_key_info_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/i2d_pr.c:72:28
+	PKCS8_PRIV_KEY_INFO_free: (struct pkcs8_priv_key_info_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/i2d_pr.c:74:2
+	i2d_PKCS8_PRIV_KEY_INFO: (struct pkcs8_priv_key_info_st*, unsigned char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/i2d_pr.c:73:12
+exports (1)
+	i2d_PrivateKey: (struct evp_pkey_st*, unsigned char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/i2d_pr.c:65:4

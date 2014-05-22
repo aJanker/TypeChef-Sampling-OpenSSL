@@ -1,0 +1,8 @@
+fm True
+features (0)
+	
+imports (2)
+	CRYPTO_ctr128_encrypt: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, unsigned char*, unsigned int*, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ctr.c:62:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ctr.c:62:1
+	Camellia_encrypt: (const unsigned char*, unsigned char*, const struct camellia_key_st*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ctr.c:62:73, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ctr.c:62:73, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ctr.c:62:73, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ctr.c:62:73
+exports (1)
+	Camellia_ctr128_encrypt: (const unsigned char*, unsigned char*, unsigned long, const struct camellia_key_st*, unsigned char*, unsigned char*, unsigned int*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ctr.c:55:5

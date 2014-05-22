@@ -1,0 +1,17 @@
+fm True
+features (0)
+	
+imports (10)
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_CIPHER_CTX_init: (struct evp_cipher_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:77:2
+	EVP_CIPHER_CTX_set_key_length: (struct evp_cipher_ctx_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:99:18
+	EVP_DecryptFinal_ex: (struct evp_cipher_ctx_st*, unsigned char*, signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:117:3
+	EVP_DecryptInit_ex: (struct evp_cipher_ctx_st*, const struct evp_cipher_st*, struct engine_st*, const unsigned char*, const unsigned char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:119:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:104:5, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:78:6
+	EVP_PKEY_decrypt_old: (unsigned char*, const unsigned char*, signed int, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:98:3
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:108:18
+	RSA_size: (const struct rsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:89:6
+exports (2)
+	EVP_OpenFinal: (struct evp_cipher_ctx_st*, unsigned char*, signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:113:4
+	EVP_OpenInit: (struct evp_cipher_ctx_st*, const struct evp_cipher_st*, const unsigned char*, signed int, const unsigned char*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/p_open.c:69:4

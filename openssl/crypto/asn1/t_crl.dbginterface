@@ -1,0 +1,23 @@
+fm True
+features (0)
+	
+imports (16)
+	ASN1_INTEGER_get: (const struct asn1_string_st*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/x509.h:621:33
+	ASN1_TIME_print: (struct bio_st*, const struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:123:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:105:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:102:1
+	BIO_ctrl: (struct bio_st*, signed int, signed long, void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:510:27
+	BIO_free: (struct bio_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:80:8
+	BIO_new: (struct bio_method_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:73:15
+	BIO_printf: (struct bio_st*, const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:124:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:122:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:120:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:116:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:115:5, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:107:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:106:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:103:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:101:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:99:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:95:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:93:1
+	BIO_s_file: () => struct bio_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:73:23, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:73:23
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	OBJ_obj2nid: (const struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:96:5
+	X509V3_extensions_print: (struct bio_st*, char*, struct stack_st_X509_EXTENSION*, unsigned long, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:125:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:109:1
+	X509_NAME_oneline: (struct X509_name_st*, char*, signed int) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:98:3
+	X509_signature_print: (struct bio_st*, struct X509_algor_st*, struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:128:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:97:1
+	i2a_ASN1_INTEGER: (struct bio_st*, struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:121:2
+	sk_num: (const struct stack_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30
+	sk_value: (const struct stack_st*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43
+exports (2)
+	X509_CRL_print: (struct bio_st*, struct X509_crl_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:85:4
+	X509_CRL_print_fp: (struct _IO_FILE*, struct X509_crl_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_crl.c:68:4

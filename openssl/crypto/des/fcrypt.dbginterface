@@ -1,0 +1,13 @@
+fm True
+features (0)
+	
+imports (6)
+	DES_set_key_unchecked: (unsigned char[]*, struct DES_ks*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:143:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:143:1
+	_openssl_ascii2ebcdic: (void*, const void*, unsigned long) => void* 		if (!def(OPENSSL_NO_DES)&def(_OSD_POSIX))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/ebcdic.h:12:21, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/ebcdic.h:12:21
+	_openssl_ebcdic2ascii: (void*, const void*, unsigned long) => void* 		if (!def(OPENSSL_NO_DES)&def(_OSD_POSIX))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/ebcdic.h:11:21, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/ebcdic.h:11:21, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/ebcdic.h:11:21, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/ebcdic.h:11:21
+	fcrypt_body: (unsigned int*, struct DES_ks*, unsigned int, unsigned int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:144:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:144:1
+	strlen: (const char*) => unsigned long 		if (!def(OPENSSL_NO_DES)&def(_OSD_POSIX))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:92:24, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:92:24, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:92:24, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:92:24
+	strncpy: (char*, const char*, unsigned long) => char* 		if (!def(OPENSSL_NO_DES)&def(_OSD_POSIX))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:77:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:77:1
+exports (2)
+	DES_crypt: (const char*, const char*) => char* 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:61:6
+	DES_fcrypt: (const char*, const char*, char*) => char* 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt.c:99:6

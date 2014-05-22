@@ -1,0 +1,13 @@
+fm True
+features (0)
+	
+imports (7)
+	CMS_dataFinal: (struct CMS_ContentInfo_st*, struct bio_st*) => signed int 		if !def(OPENSSL_NO_CMS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:338:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:338:6
+	CMS_dataInit: (struct CMS_ContentInfo_st*, struct bio_st*) => struct bio_st* 		if !def(OPENSSL_NO_CMS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:331:19, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:331:19
+	CMS_stream: (unsigned char***, struct CMS_ContentInfo_st*) => signed int 		if !def(OPENSSL_NO_CMS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:328:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:328:6
+	CRYPTO_free: (void*) => void 		if !def(OPENSSL_NO_CMS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	EVP_PKEY_free: (struct evp_pkey_st*) => void 		if !def(OPENSSL_NO_CMS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:227:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:227:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:97:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:97:3
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if !def(OPENSSL_NO_CMS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:245:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:245:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:236:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:236:4
+	X509_free: (struct x509_st*) => void 		if !def(OPENSSL_NO_CMS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:229:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:229:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:99:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cms/cms_asn1.c:99:3
+exports (0)
+

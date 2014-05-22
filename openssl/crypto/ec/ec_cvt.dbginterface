@@ -1,0 +1,15 @@
+fm True
+features (0)
+	
+imports (8)
+	EC_GF2m_simple_method: () => const struct ec_method_st* 		if !def(OPENSSL_NO_EC2M)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:156:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:156:8
+	EC_GFp_mont_method: () => const struct ec_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:134:9, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:103:8
+	EC_GROUP_clear_free: (struct ec_group_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:164:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:142:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:133:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:124:3
+	EC_GROUP_new: (const struct ec_method_st*) => struct ec_group_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:158:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:136:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:108:7
+	EC_GROUP_set_curve_GF2m: (struct ec_group_st*, const struct bignum_st*, const struct bignum_st*, const struct bignum_st*, struct bignum_ctx*) => signed int 		if !def(OPENSSL_NO_EC2M)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:162:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:162:6
+	EC_GROUP_set_curve_GFp: (struct ec_group_st*, const struct bignum_st*, const struct bignum_st*, const struct bignum_st*, struct bignum_ctx*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:140:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:112:6
+	ERR_clear_error: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:131:2
+	ERR_peek_last_error: () => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:116:8
+exports (2)
+	EC_GROUP_new_curve_GF2m: (const struct bignum_st*, const struct bignum_st*, const struct bignum_st*, struct bignum_ctx*) => struct ec_group_st* 		if !def(OPENSSL_NO_EC2M)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:151:10
+	EC_GROUP_new_curve_GFp: (const struct bignum_st*, const struct bignum_st*, const struct bignum_st*, struct bignum_ctx*) => struct ec_group_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ec/ec_cvt.c:76:10

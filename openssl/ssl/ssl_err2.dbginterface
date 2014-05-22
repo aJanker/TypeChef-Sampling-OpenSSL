@@ -1,0 +1,8 @@
+fm True
+features (0)
+	
+imports (2)
+	ERR_load_SSL_strings: () => void 		if (!def(OPENSSL_NO_ERR)&!def(OPENSSL_NO_HMAC))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c:67:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c:67:1
+	ERR_load_crypto_strings: () => void 		if (!def(OPENSSL_NO_ERR)&!def(OPENSSL_NO_HMAC))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c:66:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c:66:1
+exports (1)
+	SSL_load_error_strings: () => void 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c:63:5

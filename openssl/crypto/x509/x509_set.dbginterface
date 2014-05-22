@@ -1,0 +1,18 @@
+fm True
+features (0)
+	
+imports (6)
+	ASN1_INTEGER_set: (struct asn1_string_st*, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:74:8
+	ASN1_STRING_dup: (const struct asn1_string_st*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:725:41, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:725:41, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:599:48
+	ASN1_STRING_free: (struct asn1_string_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:724:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:724:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:598:32
+	ASN1_STRING_type_new: (signed int) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:596:47
+	X509_NAME_set: (struct X509_name_st**, struct X509_name_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:104:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:98:8
+	X509_PUBKEY_set: (struct X509_pubkey_st**, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:146:8
+exports (7)
+	X509_set_issuer_name: (struct x509_st*, struct X509_name_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:95:4
+	X509_set_notAfter: (struct x509_st*, const struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:125:4
+	X509_set_notBefore: (struct x509_st*, const struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:107:4
+	X509_set_pubkey: (struct x509_st*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:143:4
+	X509_set_serialNumber: (struct x509_st*, struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:77:4
+	X509_set_subject_name: (struct x509_st*, struct X509_name_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:101:4
+	X509_set_version: (struct x509_st*, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_set.c:66:4

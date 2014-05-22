@@ -1,0 +1,28 @@
+fm True
+features (0)
+	
+imports (20)
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_CIPHER_CTX_cleanup: (struct evp_cipher_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:179:1
+	EVP_CIPHER_CTX_init: (struct evp_cipher_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:101:1
+	EVP_DigestInit: (struct env_md_ctx_st*, const struct env_md_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/evp.h:514:27
+	EVP_DigestUpdate: (struct env_md_ctx_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/evp.h:515:31
+	EVP_EncodeBlock: (unsigned char*, const unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:174:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:108:4
+	EVP_EncodeFinal: (struct evp_Encode_Ctx_st*, unsigned char*, signed int*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:170:1
+	EVP_EncodeInit: (struct evp_Encode_Ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:96:1
+	EVP_EncodeUpdate: (struct evp_Encode_Ctx_st*, unsigned char*, signed int*, const unsigned char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:167:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:137:2
+	EVP_EncryptFinal_ex: (struct evp_cipher_ctx_st*, unsigned char*, signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:166:1
+	EVP_EncryptUpdate: (struct evp_cipher_ctx_st*, unsigned char*, signed int*, const unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:136:2
+	EVP_MD_CTX_cleanup: (struct env_md_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:178:1
+	EVP_MD_CTX_init: (struct env_md_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:98:1
+	EVP_SealInit: (struct evp_cipher_ctx_st*, const struct evp_cipher_st*, unsigned char**, signed int*, unsigned char*, struct evp_pkey_st**, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:102:5
+	EVP_SignFinal: (struct env_md_ctx_st*, unsigned char*, unsigned int*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:173:6
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:117:1
+	RSA_size: (const struct rsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:157:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:109:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:109:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:86:4
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:111:2
+exports (3)
+	PEM_SealFinal: (struct PEM_Encode_Seal_st*, unsigned char*, signed int*, unsigned char*, signed int*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:145:4
+	PEM_SealInit: (struct PEM_Encode_Seal_st*, struct evp_cipher_st*, struct env_md_st*, unsigned char**, signed int*, unsigned char*, struct evp_pkey_st**, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:70:4
+	PEM_SealUpdate: (struct PEM_Encode_Seal_st*, unsigned char*, signed int*, unsigned char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_seal.c:121:5

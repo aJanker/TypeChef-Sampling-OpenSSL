@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><export>
+            <sig>
+            <name>
+                DSO_METHOD_win32
+            </name>
+            <type>
+                <function><ret><pointer>
+        <struct isUnion="false">
+        dso_meth_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dso/dso_win32.c
+            </file>
+            <line>
+                65
+            </line>
+            <col>
+                12
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

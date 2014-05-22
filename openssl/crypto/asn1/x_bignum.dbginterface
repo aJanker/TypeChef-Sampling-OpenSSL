@@ -1,0 +1,12 @@
+fm True
+features (0)
+	
+imports (6)
+	BN_bin2bn: (const unsigned char*, signed int, struct bignum_st*) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_bignum.c:132:5
+	BN_bn2bin: (const struct bignum_st*, unsigned char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_bignum.c:121:2
+	BN_clear_free: (struct bignum_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_bignum.c:105:29
+	BN_free: (struct bignum_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_bignum.c:106:6
+	BN_new: () => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_bignum.c:97:23
+	BN_num_bits: (const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:402:26, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_bignum.c:117:4
+exports (0)
+

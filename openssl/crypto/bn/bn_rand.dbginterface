@@ -1,0 +1,25 @@
+fm True
+features (0)
+	
+imports (15)
+	BN_bin2bn: (const unsigned char*, signed int, struct bignum_st*) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:199:6
+	BN_cmp: (const struct bignum_st*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:289:9, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:263:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:260:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:274:9
+	BN_is_bit_set: (const struct bignum_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:248:43, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:248:11
+	BN_num_bits: (const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:242:5
+	BN_set_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:422:20, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:422:20
+	BN_sub: (struct bignum_st*, const struct bignum_st*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:264:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:262:9
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:204:2
+	RAND_add: (const void*, signed int, double) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:143:1
+	RAND_bytes: (unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:152:6
+	RAND_pseudo_bytes: (unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:166:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:147:6
+	__assert_fail: (const char*, const char*, unsigned int, const char*) => void 		if (def(BN_DEBUG)&!def(NDEBUG))		at file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83
+	time: (signed long*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:142:1
+exports (5)
+	BN_bntest_rand: (struct bignum_st*, signed int, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:222:8
+	BN_pseudo_rand: (struct bignum_st*, signed int, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:216:8
+	BN_pseudo_rand_range: (struct bignum_st*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:302:4
+	BN_rand: (struct bignum_st*, signed int, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:211:8
+	BN_rand_range: (struct bignum_st*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_rand.c:297:4

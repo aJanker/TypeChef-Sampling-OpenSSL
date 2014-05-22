@@ -1,0 +1,21 @@
+fm True
+features (0)
+	
+imports (10)
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	OBJ_cmp: (const struct asn1_object_st*, const struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:192:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:184:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:105:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:68:8
+	OBJ_obj2nid: (const struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:126:6
+	sk_find: (struct stack_st*, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:154:36
+	sk_new: ((const void*, const void*) => signed int*) => struct stack_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:136:50
+	sk_new_null: () => struct stack_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:138:50
+	sk_num: (const struct stack_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30
+	sk_push: (struct stack_st*, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:150:36, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:150:36
+	sk_value: (const struct stack_st*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43
+exports (6)
+	level_add_node: (struct X509_POLICY_LEVEL_st*, const struct X509_POLICY_DATA_st*, struct X509_POLICY_NODE_st*, struct X509_POLICY_TREE_st*) => struct X509_POLICY_NODE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:112:18
+	level_find_node: (const struct X509_POLICY_LEVEL_st*, const struct X509_POLICY_NODE_st*, const struct asn1_object_st*) => struct X509_POLICY_NODE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:94:18
+	policy_node_cmp_new: () => struct stack_st_X509_POLICY_NODE* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:71:28
+	policy_node_free: (struct X509_POLICY_NODE_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:165:5
+	policy_node_match: (const struct X509_POLICY_LEVEL_st*, const struct X509_POLICY_NODE_st*, const struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:174:4
+	tree_find_sk: (struct stack_st_X509_POLICY_NODE*, const struct asn1_object_st*) => struct X509_POLICY_NODE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_node.c:76:18

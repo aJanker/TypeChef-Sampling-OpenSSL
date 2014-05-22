@@ -1,0 +1,10 @@
+fm True
+features (0)
+	
+imports (4)
+	CRYPTO_cbc128_decrypt: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:62:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:62:2
+	CRYPTO_cbc128_encrypt: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:60:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:60:2
+	SEED_decrypt: (const unsigned char*, unsigned char*, const struct seed_key_st*) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:62:55, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:62:55, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:62:55, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:62:55
+	SEED_encrypt: (const unsigned char*, unsigned char*, const struct seed_key_st*) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:60:55, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:60:55, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:60:55, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:60:55
+exports (1)
+	SEED_cbc_encrypt: (const unsigned char*, unsigned char*, unsigned long, const struct seed_key_st*, unsigned char*, signed int) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed_cbc.c:55:5

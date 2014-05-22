@@ -1,0 +1,11 @@
+fm True
+features (0)
+	
+imports (4)
+	BF_decrypt: (unsigned int*, const struct bf_key_st*) => void 		if (!def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:91:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:91:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:91:2
+	BF_decrypt: (unsigned long*, const struct bf_key_st*) => void 		if (def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:91:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:91:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:91:2
+	BF_encrypt: (unsigned int*, const struct bf_key_st*) => void 		if (!def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:89:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:89:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:89:2
+	BF_encrypt: (unsigned long*, const struct bf_key_st*) => void 		if (def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:89:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:89:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:89:2
+exports (2)
+	BF_ecb_encrypt: (const unsigned char*, unsigned char*, const struct bf_key_st*, signed int) => void 		if !def(OPENSSL_NO_BF)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:81:5
+	BF_options: () => const char* 		if !def(OPENSSL_NO_BF)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ecb.c:70:12

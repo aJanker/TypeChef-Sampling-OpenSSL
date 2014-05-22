@@ -1,0 +1,34 @@
+fm True
+features (0)
+	
+imports (28)
+	ERR_load_ASN1_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:130:1
+	ERR_load_BIO_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:144:1
+	ERR_load_BN_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:115:1
+	ERR_load_BUF_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:123:1
+	ERR_load_CMS_strings: () => void 		if (!def(OPENSSL_NO_ERR)&!def(OPENSSL_NO_CMS))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:157:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:157:1
+	ERR_load_COMP_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:162:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:133:1
+	ERR_load_CONF_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:131:1
+	ERR_load_CRYPTO_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:132:1
+	ERR_load_DH_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:120:1
+	ERR_load_DSA_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:127:1
+	ERR_load_DSO_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:149:1
+	ERR_load_ECDH_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:141:1
+	ERR_load_ECDSA_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:138:1
+	ERR_load_EC_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:135:1
+	ERR_load_ENGINE_strings: () => void 		if (!def(OPENSSL_NO_ENGINE)&!def(OPENSSL_NO_ERR))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:152:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:152:1
+	ERR_load_ERR_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:114:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:114:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:114:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:114:1
+	ERR_load_EVP_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:122:1
+	ERR_load_OBJ_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:124:1
+	ERR_load_OCSP_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:154:1
+	ERR_load_PEM_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:125:1
+	ERR_load_PKCS12_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:147:1
+	ERR_load_PKCS7_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:145:1
+	ERR_load_RAND_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:148:1
+	ERR_load_RSA_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:117:1
+	ERR_load_TS_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:150:1
+	ERR_load_UI_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:155:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:155:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:155:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:155:1
+	ERR_load_X509V3_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:146:1
+	ERR_load_X509_strings: () => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:129:1
+exports (1)
+	ERR_load_crypto_strings: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/err/err_all.c:111:5

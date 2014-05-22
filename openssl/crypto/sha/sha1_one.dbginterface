@@ -1,0 +1,10 @@
+fm True
+features (0)
+	
+imports (4)
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha1_one.c:75:1
+	SHA1_Final: (unsigned char*, struct SHAstate_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha1_one.c:74:1
+	SHA1_Init: (struct SHAstate_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha1_one.c:71:6
+	SHA1_Update: (struct SHAstate_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha1_one.c:73:1
+exports (1)
+	SHA1: (const unsigned char*, unsigned long, unsigned char*) => unsigned char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/sha/sha1_one.c:65:15

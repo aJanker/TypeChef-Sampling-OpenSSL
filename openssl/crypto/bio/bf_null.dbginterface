@@ -1,0 +1,14 @@
+fm True
+features (0)
+	
+imports (8)
+	BIO_callback_ctrl: (struct bio_st*, signed int, (struct bio_st*, signed int, const char*, signed int, signed long, signed long) => void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:164:6
+	BIO_clear_flags: (struct bio_st*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35
+	BIO_copy_next_retry: (struct bio_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:145:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:131:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:119:1
+	BIO_ctrl: (struct bio_st*, signed int, signed long, void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:151:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:144:6
+	BIO_gets: (struct bio_st*, char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:173:8
+	BIO_puts: (struct bio_st*, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:180:8
+	BIO_read: (struct bio_st*, void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:117:5
+	BIO_write: (struct bio_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:129:5
+exports (1)
+	BIO_f_null: () => struct bio_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bf_null.c:89:12

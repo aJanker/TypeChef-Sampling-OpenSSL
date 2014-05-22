@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (2)
+	UI_UTIL_read_pw: (char*, char*, signed int, const char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ui/ui_compat.c:66:8
+	UI_UTIL_read_pw_string: (char*, signed int, const char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ui/ui_compat.c:61:8
+exports (2)
+	_ossl_old_des_read_pw: (char*, char*, signed int, const char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ui/ui_compat.c:64:4
+	_ossl_old_des_read_pw_string: (char*, signed int, const char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ui/ui_compat.c:59:4

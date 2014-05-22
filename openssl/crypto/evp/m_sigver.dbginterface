@@ -1,0 +1,25 @@
+fm True
+features (0)
+	
+imports (16)
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_DigestFinal_ex: (struct env_md_ctx_st*, unsigned char*, unsigned int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:195:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:150:7
+	EVP_DigestInit_ex: (struct env_md_ctx_st*, const struct env_md_st*, struct engine_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:114:6
+	EVP_MD_CTX_cleanup: (struct env_md_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:196:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:151:2
+	EVP_MD_CTX_copy_ex: (struct env_md_ctx_st*, const struct env_md_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:187:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:144:7
+	EVP_MD_CTX_init: (struct env_md_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:186:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:143:2
+	EVP_MD_size: (const struct env_md_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:166:11
+	EVP_PKEY_CTX_ctrl: (struct evp_pkey_ctx_st*, signed int, signed int, signed int, signed int, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/evp.h:1080:50
+	EVP_PKEY_CTX_new: (struct evp_pkey_st*, struct engine_st*) => struct evp_pkey_ctx_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:71:14
+	EVP_PKEY_get_default_digest_nid: (struct evp_pkey_st*, signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:78:6
+	EVP_PKEY_sign: (struct evp_pkey_ctx_st*, unsigned char*, unsigned long*, const unsigned char*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:167:16, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:154:6
+	EVP_PKEY_sign_init: (struct evp_pkey_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:107:11
+	EVP_PKEY_verify: (struct evp_pkey_ctx_st*, const unsigned char*, unsigned long, const unsigned char*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:199:8
+	EVP_PKEY_verify_init: (struct evp_pkey_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:96:11
+	EVP_get_digestbyname: (const char*) => const struct env_md_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/evp.h:472:31
+	OBJ_nid2sn: (signed int) => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/evp.h:472:52, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/evp.h:472:52
+exports (4)
+	EVP_DigestSignFinal: (struct env_md_ctx_st*, unsigned char*, unsigned long*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:131:4
+	EVP_DigestSignInit: (struct env_md_ctx_st*, struct evp_pkey_ctx_st**, const struct env_md_st*, struct engine_st*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:119:4
+	EVP_DigestVerifyFinal: (struct env_md_ctx_st*, unsigned char*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:174:4
+	EVP_DigestVerifyInit: (struct env_md_ctx_st*, struct evp_pkey_ctx_st**, const struct env_md_st*, struct engine_st*, struct evp_pkey_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_sigver.c:125:4

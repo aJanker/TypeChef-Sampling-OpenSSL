@@ -1,0 +1,15 @@
+fm True
+features (0)
+	
+imports (9)
+	OBJ_obj2nid: (const struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_map.c:86:9, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_map.c:85:7
+	POLICY_MAPPING_free: (struct POLICY_MAPPING_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:1456:88, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:1456:88
+	policy_cache_find_data: (const struct X509_POLICY_CACHE_st*, const struct asn1_object_st*) => struct X509_POLICY_DATA_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_map.c:93:9
+	policy_data_free: (struct X509_POLICY_DATA_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_map.c:112:4
+	policy_data_new: (struct POLICYINFO_st*, const struct asn1_object_st*, signed int) => struct X509_POLICY_DATA_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_map.c:101:10
+	sk_num: (const struct stack_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30
+	sk_pop_free: (struct stack_st*, (void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:170:46
+	sk_push: (struct stack_st*, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:150:36, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:150:36
+	sk_value: (const struct stack_st*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:144:43
+exports (1)
+	policy_cache_set_mapping: (struct x509_st*, struct stack_st_POLICY_MAPPING*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/pcy_map.c:69:4

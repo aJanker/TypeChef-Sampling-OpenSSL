@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	strlen: (const char*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_null.c:148:8
+exports (1)
+	BIO_s_null: () => struct bio_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_null.c:85:12

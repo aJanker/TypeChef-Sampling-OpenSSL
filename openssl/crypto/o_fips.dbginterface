@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (2)
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	OPENSSL_init: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/o_fips.c:77:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/o_fips.c:67:1
+exports (2)
+	FIPS_mode: () => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/o_fips.c:65:4
+	FIPS_mode_set: (signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/o_fips.c:75:4

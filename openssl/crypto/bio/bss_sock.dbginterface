@@ -1,0 +1,21 @@
+fm True
+features (0)
+	
+imports (12)
+	BIO_clear_flags: (struct bio_st*, signed int) => void 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35
+	BIO_int_ctrl: (struct bio_st*, signed int, signed long, signed int) => signed long 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:507:27
+	BIO_new: (struct bio_method_st*) => struct bio_st* 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_sock.c:105:5
+	BIO_set_flags: (struct bio_st*, signed int) => void 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:242:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:240:32
+	__errno_location: () => signed int* 		if !def(OPENSSL_NO_SOCK)		at file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19, file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19, file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19
+	close: (signed int) => signed int 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:209:24
+	read: (signed int, void*, unsigned long) => signed int 		if (def(OPENSSL_SYS_SUNOS)&!def(OPENSSL_NO_SOCK))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:210:26, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:210:26
+	read: (signed int, void*, unsigned long) => signed long 		if (!def(OPENSSL_SYS_SUNOS)&!def(OPENSSL_NO_SOCK))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:210:26, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:210:26
+	shutdown: (signed int, signed int) => signed int 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:615:30
+	strlen: (const char*) => unsigned long 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_sock.c:212:3
+	write: (signed int, const void*, unsigned long) => signed int 		if (def(OPENSSL_SYS_SUNOS)&!def(OPENSSL_NO_SOCK))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:211:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:211:27
+	write: (signed int, const void*, unsigned long) => signed long 		if (!def(OPENSSL_SYS_SUNOS)&!def(OPENSSL_NO_SOCK))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:211:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/e_os.h:211:27
+exports (4)
+	BIO_new_socket: (signed int, signed int) => struct bio_st* 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_sock.c:101:5
+	BIO_s_socket: () => struct bio_method_st* 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_sock.c:96:12
+	BIO_sock_non_fatal_error: (signed int) => signed int 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_sock.c:235:4
+	BIO_sock_should_retry: (signed int) => signed int 		if !def(OPENSSL_NO_SOCK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_sock.c:217:4

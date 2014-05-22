@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                ERR_load_SSL_strings
+            </name>
+            <type>
+                <function><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_ERR) &amp;&amp; !definedEx(OPENSSL_NO_HMAC))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c
+            </file>
+            <line>
+                67
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c
+            </file>
+            <line>
+                67
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                ERR_load_crypto_strings
+            </name>
+            <type>
+                <function><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_ERR) &amp;&amp; !definedEx(OPENSSL_NO_HMAC))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c
+            </file>
+            <line>
+                66
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c
+            </file>
+            <line>
+                66
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                SSL_load_error_strings
+            </name>
+            <type>
+                <function><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_HMAC)
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/ssl_err2.c
+            </file>
+            <line>
+                63
+            </line>
+            <col>
+                5
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

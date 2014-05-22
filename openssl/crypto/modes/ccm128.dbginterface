@@ -1,0 +1,15 @@
+fm True
+features (0)
+	
+imports (2)
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:439:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:98:1
+	memset: (void*, signed int, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:66:1
+exports (8)
+	CRYPTO_ccm128_aad: (struct ccm128_context*, const unsigned char*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:104:5
+	CRYPTO_ccm128_decrypt: (struct ccm128_context*, const unsigned char*, unsigned char*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:245:4
+	CRYPTO_ccm128_decrypt_ccm64: (struct ccm128_context*, const unsigned char*, unsigned char*, unsigned long, (const unsigned char*, unsigned char*, unsigned long, const void*, const unsigned char*, unsigned char*) => void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:381:4
+	CRYPTO_ccm128_encrypt: (struct ccm128_context*, const unsigned char*, unsigned char*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:170:4
+	CRYPTO_ccm128_encrypt_ccm64: (struct ccm128_context*, const unsigned char*, unsigned char*, unsigned long, (const unsigned char*, unsigned char*, unsigned long, const void*, const unsigned char*, unsigned char*) => void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:324:4
+	CRYPTO_ccm128_init: (struct ccm128_context*, unsigned int, unsigned int, void*, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:63:5
+	CRYPTO_ccm128_setiv: (struct ccm128_context*, const unsigned char*, unsigned long, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:76:4
+	CRYPTO_ccm128_tag: (struct ccm128_context*, unsigned char*, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/ccm128.c:434:7

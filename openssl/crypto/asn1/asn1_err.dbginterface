@@ -1,0 +1,8 @@
+fm True
+features (0)
+	
+imports (2)
+	ERR_func_error_string: (unsigned long) => const char* 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/asn1_err.c:326:5
+	ERR_load_strings: (signed int, struct ERR_string_data_st*) => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/asn1_err.c:329:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/asn1_err.c:328:2
+exports (1)
+	ERR_load_ASN1_strings: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/asn1_err.c:322:5

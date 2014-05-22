@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                BN_bin2bn
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+        </const></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                400
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                300
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                222
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                165
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                119
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                83
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                52
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                26
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                get_rfc3526_prime_8192
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                310
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                get_rfc3526_prime_6144
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                232
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                get_rfc3526_prime_4096
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                175
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                get_rfc3526_prime_3072
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                129
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                get_rfc3526_prime_2048
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                93
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                get_rfc3526_prime_1536
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                63
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                get_rfc2409_prime_1024
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                37
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                get_rfc2409_prime_768
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_const.c
+            </file>
+            <line>
+                14
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

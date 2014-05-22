@@ -1,0 +1,1366 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                ASN1_item_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                194
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                ASN1_item_new
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                844
+            </line>
+            <col>
+                117
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                ASN1_item_i2d
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                289
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                ASN1_item_d2i
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer>
+        </const></param><param><signed>
+        <long/>
+    </signed></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h
+            </file>
+            <line>
+                858
+            </line>
+            <col>
+                160
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                GOST_CLIENT_KEY_EXCHANGE_PARAMS_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_CLIENT_KEY_EXCHANGE_PARAMS_free
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_CLIENT_KEY_EXCHANGE_PARAMS_new
+            </name>
+            <type>
+                <function><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_CLIENT_KEY_EXCHANGE_PARAMS_new
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                i2d_GOST_CLIENT_KEY_EXCHANGE_PARAMS
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: i2d_GOST_CLIENT_KEY_EXCHANGE_PARAMS
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                d2i_GOST_CLIENT_KEY_EXCHANGE_PARAMS
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer>
+        </const></param><param><signed>
+        <long/>
+    </signed></param><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: d2i_GOST_CLIENT_KEY_EXCHANGE_PARAMS
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_CIPHER_PARAMS_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_CIPHER_PARAMS_free
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_CIPHER_PARAMS_new
+            </name>
+            <type>
+                <function><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_CIPHER_PARAMS_new
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                i2d_GOST_CIPHER_PARAMS
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: i2d_GOST_CIPHER_PARAMS
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                d2i_GOST_CIPHER_PARAMS
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer>
+        </const></param><param><signed>
+        <long/>
+    </signed></param><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: d2i_GOST_CIPHER_PARAMS
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_PARAMS_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_PARAMS_free
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_PARAMS_new
+            </name>
+            <type>
+                <function><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_PARAMS_new
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                i2d_GOST_KEY_PARAMS
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: i2d_GOST_KEY_PARAMS
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                d2i_GOST_KEY_PARAMS
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer>
+        </const></param><param><signed>
+        <long/>
+    </signed></param><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: d2i_GOST_KEY_PARAMS
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_AGREEMENT_INFO_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_AGREEMENT_INFO_free
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_AGREEMENT_INFO_new
+            </name>
+            <type>
+                <function><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_AGREEMENT_INFO_new
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                i2d_GOST_KEY_AGREEMENT_INFO
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: i2d_GOST_KEY_AGREEMENT_INFO
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                d2i_GOST_KEY_AGREEMENT_INFO
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer>
+        </const></param><param><signed>
+        <long/>
+    </signed></param><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: d2i_GOST_KEY_AGREEMENT_INFO
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_INFO_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_INFO_free
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_INFO_new
+            </name>
+            <type>
+                <function><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_INFO_new
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                i2d_GOST_KEY_INFO
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: i2d_GOST_KEY_INFO
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                d2i_GOST_KEY_INFO
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer>
+        </const></param><param><signed>
+        <long/>
+    </signed></param><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: d2i_GOST_KEY_INFO
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_TRANSPORT_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_TRANSPORT_free
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                GOST_KEY_TRANSPORT_new
+            </name>
+            <type>
+                <function><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: GOST_KEY_TRANSPORT_new
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                i2d_GOST_KEY_TRANSPORT
+            </name>
+            <type>
+                <function><param><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: i2d_GOST_KEY_TRANSPORT
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                d2i_GOST_KEY_TRANSPORT
+            </name>
+            <type>
+                <function><param><pointer>
+        <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+    </pointer>
+        </const></param><param><signed>
+        <long/>
+    </signed></param><ret><pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                !definedEx(OPENSSL_NO_ENGINE)
+            </featureexpr><pos>
+            <file>
+                string literal: d2i_GOST_KEY_TRANSPORT
+            </file>
+            <line>
+                1
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

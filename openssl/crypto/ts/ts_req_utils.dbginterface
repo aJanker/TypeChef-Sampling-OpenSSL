@@ -1,0 +1,51 @@
+fm True
+features (0)
+	
+imports (22)
+	ASN1_INTEGER_dup: (const struct asn1_string_st*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:157:13
+	ASN1_INTEGER_free: (struct asn1_string_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:163:1
+	ASN1_INTEGER_get: (const struct asn1_string_st*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:72:8
+	ASN1_INTEGER_set: (struct asn1_string_st*, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:67:8
+	ASN1_OBJECT_free: (struct asn1_object_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:141:1
+	ASN1_OCTET_STRING_set: (struct asn1_string_st*, const unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:121:8
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	OBJ_dup: (const struct asn1_object_st*) => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:135:14
+	TS_MSG_IMPRINT_dup: (struct TS_msg_imprint_st*) => struct TS_msg_imprint_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:81:19
+	TS_MSG_IMPRINT_free: (struct TS_msg_imprint_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:87:1
+	X509V3_get_d2i: (struct stack_st_X509_EXTENSION*, signed int, signed int*, signed int*) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:233:8
+	X509_ALGOR_dup: (struct X509_algor_st*) => struct X509_algor_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:103:11
+	X509_ALGOR_free: (struct X509_algor_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:109:1
+	X509_EXTENSION_free: (struct X509_extension_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:1830:88, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:1830:88
+	X509v3_add_ext: (struct stack_st_X509_EXTENSION**, struct X509_extension_st*, signed int) => struct stack_st_X509_EXTENSION* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:228:8
+	X509v3_delete_ext: (struct stack_st_X509_EXTENSION*, signed int) => struct X509_extension_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:223:8
+	X509v3_get_ext: (const struct stack_st_X509_EXTENSION*, signed int) => struct X509_extension_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:218:8
+	X509v3_get_ext_by_NID: (const struct stack_st_X509_EXTENSION*, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:203:8
+	X509v3_get_ext_by_OBJ: (const struct stack_st_X509_EXTENSION*, struct asn1_object_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:208:8
+	X509v3_get_ext_by_critical: (const struct stack_st_X509_EXTENSION*, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:213:8
+	X509v3_get_ext_count: (const struct stack_st_X509_EXTENSION*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:198:8
+	sk_pop_free: (struct stack_st*, (void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:170:46
+exports (24)
+	TS_MSG_IMPRINT_get_algo: (struct TS_msg_imprint_st*) => struct X509_algor_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:114:12
+	TS_MSG_IMPRINT_get_msg: (struct TS_msg_imprint_st*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:124:19
+	TS_MSG_IMPRINT_set_algo: (struct TS_msg_imprint_st*, struct X509_algor_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:97:4
+	TS_MSG_IMPRINT_set_msg: (struct TS_msg_imprint_st*, unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:119:4
+	TS_REQ_add_ext: (struct TS_req_st*, struct X509_extension_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:226:4
+	TS_REQ_delete_ext: (struct TS_req_st*, signed int) => struct X509_extension_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:221:16
+	TS_REQ_ext_free: (struct TS_req_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:189:5
+	TS_REQ_get_cert_req: (const struct TS_req_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:179:4
+	TS_REQ_get_ext: (struct TS_req_st*, signed int) => struct X509_extension_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:216:16
+	TS_REQ_get_ext_by_NID: (struct TS_req_st*, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:201:4
+	TS_REQ_get_ext_by_OBJ: (struct TS_req_st*, struct asn1_object_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:206:4
+	TS_REQ_get_ext_by_critical: (struct TS_req_st*, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:211:4
+	TS_REQ_get_ext_count: (struct TS_req_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:196:4
+	TS_REQ_get_ext_d2i: (struct TS_req_st*, signed int, signed int*, signed int*) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:231:6
+	TS_REQ_get_exts: (struct TS_req_st*) => struct stack_st_X509_EXTENSION* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:184:26
+	TS_REQ_get_msg_imprint: (struct TS_req_st*) => struct TS_msg_imprint_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:92:16
+	TS_REQ_get_nonce: (const struct TS_req_st*) => const struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:168:20
+	TS_REQ_get_policy_id: (struct TS_req_st*) => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:146:13
+	TS_REQ_get_version: (const struct TS_req_st*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:70:5
+	TS_REQ_set_cert_req: (struct TS_req_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:173:4
+	TS_REQ_set_msg_imprint: (struct TS_req_st*, struct TS_msg_imprint_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:75:4
+	TS_REQ_set_nonce: (struct TS_req_st*, const struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:151:4
+	TS_REQ_set_policy_id: (struct TS_req_st*, struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:129:4
+	TS_REQ_set_version: (struct TS_req_st*, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_req_utils.c:65:4

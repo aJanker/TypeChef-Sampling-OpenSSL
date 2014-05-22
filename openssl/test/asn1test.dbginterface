@@ -1,0 +1,11 @@
+fm True
+features (0)
+	
+imports (5)
+	ASN1_object_size: (signed int, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1_mac.h:557:35
+	ASN1_put_object: (unsigned char**, signed int, signed int, signed int, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1_mac.h:557:117
+	i2d_ASN1_SET: (struct stack_st_OPENSSL_BLOCK*, unsigned char**, (void*, unsigned char**) => signed int*, signed int, signed int, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:189:80, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:189:80
+	i2d_X509_EXTENSION: (struct X509_extension_st*, unsigned char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:2397:132, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:2397:132, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:2397:132, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:2397:132
+	sk_num: (const struct stack_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:142:30
+exports (1)
+	main: (signed int, char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/asn1test.c:10:4

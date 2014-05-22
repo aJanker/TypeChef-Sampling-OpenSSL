@@ -1,0 +1,16 @@
+fm True
+features (0)
+	
+imports (9)
+	CRYPTO_add_lock: (signed int*, signed int, signed int, const char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:241:38
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	X509_CRL_free: (struct X509_crl_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_info.c:107:21
+	X509_PKEY_free: (struct private_key_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_info.c:108:24
+	X509_free: (struct x509_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_info.c:106:22
+	abort: () => void 		if def(REF_CHECK)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_info.c:102:2
+	fprintf: (struct _IO_FILE*, const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_info.c:101:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/partial_configuration.h:59:23
+exports (2)
+	X509_INFO_free: (struct X509_info_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_info.c:87:5
+	X509_INFO_new: () => struct X509_info_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/x_info.c:65:11

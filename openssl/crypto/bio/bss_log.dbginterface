@@ -1,0 +1,14 @@
+fm True
+features (0)
+	
+imports (8)
+	CRYPTO_free: (void*) => void 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	closelog: () => void 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:394:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:394:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:394:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:394:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:394:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:394:1
+	openlog: (const char*, signed int, signed int) => void 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:383:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:383:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:383:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:383:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:383:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:383:1
+	strlen: (const char*) => unsigned long 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:239:3
+	strncmp: (const char*, const char*, unsigned long) => signed int 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:211:7
+	strncpy: (char*, const char*, unsigned long) => char* 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:207:1
+	syslog: (signed int, const char*, ...) => void 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:389:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:389:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:389:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:389:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:389:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:389:1
+exports (1)
+	BIO_s_log: () => struct bio_method_st* 		if !def(NO_SYSLOG)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bio/bss_log.c:147:12

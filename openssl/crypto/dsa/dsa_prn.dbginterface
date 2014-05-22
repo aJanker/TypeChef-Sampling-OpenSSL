@@ -1,0 +1,19 @@
+fm True
+features (0)
+	
+imports (10)
+	BIO_ctrl: (struct bio_st*, signed int, signed long, void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:510:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:510:27
+	BIO_free: (struct bio_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:93:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:77:1
+	BIO_new: (struct bio_method_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:86:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:70:8
+	BIO_s_file: () => struct bio_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:86:16, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:86:16, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:70:16, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:70:16
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_PKEY_free: (struct evp_pkey_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:118:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:106:1
+	EVP_PKEY_new: () => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:114:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:102:6
+	EVP_PKEY_print_params: (struct bio_st*, const struct evp_pkey_st*, signed int, struct asn1_pctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:117:7
+	EVP_PKEY_print_private: (struct bio_st*, const struct evp_pkey_st*, signed int, struct asn1_pctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:105:7
+	EVP_PKEY_set1_DSA: (struct evp_pkey_st*, struct dsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:115:13, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:103:13
+exports (4)
+	DSA_print: (struct bio_st*, const struct dsa_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:98:4
+	DSA_print_fp: (struct _IO_FILE*, const struct dsa_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:65:4
+	DSAparams_print: (struct bio_st*, const struct dsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:110:4
+	DSAparams_print_fp: (struct _IO_FILE*, const struct dsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_prn.c:81:4

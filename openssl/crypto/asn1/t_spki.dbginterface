@@ -1,0 +1,13 @@
+fm True
+features (0)
+	
+imports (7)
+	BIO_printf: (struct bio_st*, const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:102:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:94:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:92:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:84:11, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:81:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:79:1
+	BIO_write: (struct bio_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:105:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:101:19
+	EVP_PKEY_free: (struct evp_pkey_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:88:2
+	EVP_PKEY_print_public: (struct bio_st*, const struct evp_pkey_st*, signed int, struct asn1_pctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:87:2
+	OBJ_nid2ln: (signed int) => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:95:31, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:95:31, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:82:31, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:82:31
+	OBJ_obj2nid: (const struct asn1_object_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:93:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:80:3
+	X509_PUBKEY_get: (struct X509_pubkey_st*) => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:83:8
+exports (1)
+	NETSCAPE_SPKI_print: (struct bio_st*, struct Netscape_spki_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/t_spki.c:73:4

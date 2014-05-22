@@ -1,0 +1,17 @@
+fm True
+features (0)
+	
+imports (11)
+	ASN1_item_ndef_i2d: (struct ASN1_VALUE_st*, unsigned char**, const struct ASN1_ITEM_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:235:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:231:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:170:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:166:10
+	BIO_asn1_set_prefix: (struct bio_st*, (struct bio_st*, unsigned char**, signed int*, void*) => signed int*, (struct bio_st*, unsigned char**, signed int*, void*) => signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:123:1
+	BIO_asn1_set_suffix: (struct bio_st*, (struct bio_st*, unsigned char**, signed int*, void*) => signed int*, (struct bio_st*, unsigned char**, signed int*, void*) => signed int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:124:1
+	BIO_ctrl: (struct bio_st*, signed int, signed long, void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:143:1
+	BIO_f_asn1: () => struct bio_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:114:19, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:114:19
+	BIO_free: (struct bio_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:149:2
+	BIO_new: (struct bio_method_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:114:11
+	BIO_push: (struct bio_st*, struct bio_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:118:7
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+exports (1)
+	BIO_new_NDEF: (struct bio_st*, struct ASN1_VALUE_st*, const struct ASN1_ITEM_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/bio_ndef.c:101:5

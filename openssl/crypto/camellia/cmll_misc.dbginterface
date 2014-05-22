@@ -1,0 +1,11 @@
+fm True
+features (0)
+	
+imports (3)
+	Camellia_DecryptBlock_Rounds: (signed int, const unsigned char*, const unsigned int*, unsigned char*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:79:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:79:1
+	Camellia_Ekeygen: (signed int, const unsigned char*, unsigned int*) => signed int 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:66:21, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:66:21
+	Camellia_EncryptBlock_Rounds: (signed int, const unsigned char*, const unsigned int*, unsigned char*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:73:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:73:1
+exports (3)
+	Camellia_decrypt: (const unsigned char*, unsigned char*, const struct camellia_key_st*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:76:5
+	Camellia_encrypt: (const unsigned char*, unsigned char*, const struct camellia_key_st*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:70:5
+	private_Camellia_set_key: (const unsigned char*, const signed int, struct camellia_key_st*) => signed int 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_misc.c:59:4

@@ -1,0 +1,10 @@
+fm True
+features (0)
+	
+imports (4)
+	MD4_Final: (unsigned char*, struct MD4state_st*) => signed int 		if !def(OPENSSL_NO_MD4)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:93:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:93:1
+	MD4_Init: (struct MD4state_st*) => signed int 		if !def(OPENSSL_NO_MD4)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:74:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:74:6
+	MD4_Update: (struct MD4state_st*, const void*, unsigned long) => signed int 		if !def(OPENSSL_NO_MD4)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:77:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:77:1
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if !def(OPENSSL_NO_MD4)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:94:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:94:1
+exports (1)
+	MD4: (const unsigned char*, unsigned long, unsigned char*) => unsigned char* 		if !def(OPENSSL_NO_MD4)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/md4/md4_one.c:68:15

@@ -1,0 +1,8 @@
+fm True
+features (0)
+	
+imports (2)
+	ERR_func_error_string: (unsigned long) => const char* 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_err.c:125:5
+	ERR_load_strings: (signed int, struct ERR_string_data_st*) => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_err.c:128:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_err.c:127:2
+exports (1)
+	ERR_load_CONF_strings: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_err.c:121:5

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                BIO_new_NDEF
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/bio_pk7.c
+            </file>
+            <line>
+                68
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                BIO_new_PKCS7
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        pkcs7_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/bio_pk7.c
+            </file>
+            <line>
+                66
+            </line>
+            <col>
+                5
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

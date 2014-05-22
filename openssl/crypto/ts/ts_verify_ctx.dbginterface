@@ -1,0 +1,34 @@
+fm True
+features (0)
+	
+imports (24)
+	ASN1_INTEGER_dup: (const struct asn1_string_st*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:147:21
+	ASN1_INTEGER_free: (struct asn1_string_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:102:1
+	ASN1_OBJECT_free: (struct asn1_object_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:95:1
+	ASN1_STRING_data: (struct asn1_string_st*) => unsigned char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:142:22, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:142:22
+	ASN1_STRING_length: (const struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:140:20
+	BIO_free_all: (struct bio_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:100:1
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	GENERAL_NAME_free: (struct GENERAL_NAME_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:104:1
+	OBJ_dup: (const struct asn1_object_st*) => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:130:22
+	OpenSSLDie: (const char*, signed int, const char*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:544:50, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:544:50
+	TS_MSG_IMPRINT_get_algo: (struct TS_msg_imprint_st*) => struct X509_algor_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:137:10
+	TS_MSG_IMPRINT_get_msg: (struct TS_msg_imprint_st*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:139:7
+	TS_REQ_get_msg_imprint: (struct TS_req_st*) => struct TS_msg_imprint_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:136:11
+	TS_REQ_get_nonce: (const struct TS_req_st*) => const struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:145:14
+	TS_REQ_get_policy_id: (struct TS_req_st*) => struct asn1_object_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:128:15
+	X509_ALGOR_dup: (struct X509_algor_st*) => struct X509_algor_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:138:21
+	X509_ALGOR_free: (struct X509_algor_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:97:1
+	X509_STORE_free: (struct x509_store_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:92:1
+	X509_free: (struct x509_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:1720:68, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:1720:68
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:142:1
+	memset: (void*, signed int, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:77:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:68:2
+	sk_pop_free: (struct stack_st*, (void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/safestack.h:170:46
+exports (5)
+	TS_REQ_to_TS_VERIFY_CTX: (struct TS_req_st*, struct TS_verify_ctx*) => struct TS_verify_ctx* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:109:15
+	TS_VERIFY_CTX_cleanup: (struct TS_verify_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:88:5
+	TS_VERIFY_CTX_free: (struct TS_verify_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:80:5
+	TS_VERIFY_CTX_init: (struct TS_verify_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:74:5
+	TS_VERIFY_CTX_new: () => struct TS_verify_ctx* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/ts/ts_verify_ctx.c:63:15

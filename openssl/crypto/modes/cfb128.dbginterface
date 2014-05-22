@@ -1,0 +1,10 @@
+fm True
+features (0)
+	
+imports (2)
+	__assert_fail: (const char*, const char*, unsigned int, const char*) => void 		if (def(MODES_DEBUG)&!def(NDEBUG))		at file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/cfb128.c:200:5, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/cfb128.c:186:1
+exports (3)
+	CRYPTO_cfb128_1_encrypt: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, signed int*, signed int, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/cfb128.c:209:5
+	CRYPTO_cfb128_8_encrypt: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, signed int*, signed int, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/cfb128.c:229:5
+	CRYPTO_cfb128_encrypt: (const unsigned char*, unsigned char*, unsigned long, const void*, unsigned char*, signed int*, signed int, (const unsigned char*, unsigned char*, const void*) => void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/modes/cfb128.c:66:5

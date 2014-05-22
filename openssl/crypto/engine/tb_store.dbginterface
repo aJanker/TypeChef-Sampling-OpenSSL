@@ -1,0 +1,15 @@
+fm True
+features (0)
+	
+imports (5)
+	ENGINE_get_first: () => struct engine_st* 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:87:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:87:7
+	ENGINE_get_next: (struct engine_st*) => struct engine_st* 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:87:34, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:87:34
+	engine_table_cleanup: (struct st_engine_table**) => void 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:72:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:72:1
+	engine_table_register: (struct st_engine_table**, () => void*, struct engine_st*, const signed int*, signed int, signed int) => signed int 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:78:9, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:78:9
+	engine_table_unregister: (struct st_engine_table**, struct engine_st*) => void 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:67:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:67:1
+exports (5)
+	ENGINE_get_STORE: (const struct engine_st*) => const struct store_method_st* 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:113:20
+	ENGINE_register_STORE: (struct engine_st*) => signed int 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:75:4
+	ENGINE_register_all_STORE: () => void 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:83:5
+	ENGINE_set_STORE: (struct engine_st*, const struct store_method_st*) => signed int 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:119:4
+	ENGINE_unregister_STORE: (struct engine_st*) => void 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/engine/tb_store.c:65:5

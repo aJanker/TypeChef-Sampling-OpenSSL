@@ -1,0 +1,12 @@
+fm True
+features (0)
+	
+imports (6)
+	BN_free: (struct bignum_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:97:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:93:2
+	BN_new: () => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:77:13
+	BN_set_bit: (struct bignum_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:86:7
+	RSA_free: (struct rsa_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:98:9
+	RSA_generate_key_ex: (struct rsa_st*, signed int, struct bignum_st*, struct bn_gencb_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:92:4
+	RSA_new: () => struct rsa_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:76:12
+exports (1)
+	RSA_generate_key: (signed int, unsigned long, (signed int, signed int, void*) => void*, void*) => struct rsa_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_depr.c:71:5

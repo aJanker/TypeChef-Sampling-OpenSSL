@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (1)
+	SSLv3_method: () => const struct ssl_method_st* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s3_meth.c:72:25

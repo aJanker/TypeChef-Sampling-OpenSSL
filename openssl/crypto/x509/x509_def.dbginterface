@@ -1,0 +1,12 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (6)
+	X509_get_default_cert_area: () => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_def.c:67:12
+	X509_get_default_cert_dir: () => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_def.c:70:12
+	X509_get_default_cert_dir_env: () => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_def.c:76:12
+	X509_get_default_cert_file: () => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_def.c:73:12
+	X509_get_default_cert_file_env: () => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_def.c:79:12
+	X509_get_default_private_dir: () => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_def.c:64:12

@@ -1,0 +1,33 @@
+fm True
+features (0)
+	
+imports (20)
+	BIO_ctrl: (struct bio_st*, signed int, signed long, void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:510:27
+	BIO_free: (struct bio_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:329:1
+	BIO_new: (struct bio_method_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:325:8
+	BIO_s_file: () => struct bio_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:325:16, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:325:16
+	BIO_snprintf: (char*, unsigned long, const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:373:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:155:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:150:2
+	BIO_write: (struct bio_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:349:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:340:23, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:339:18
+	BN_add_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:281:3
+	BN_div_word: (struct bignum_st*, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:143:7
+	BN_dup: (const struct bignum_st*) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:125:8
+	BN_free: (struct bignum_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:293:18, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:235:18, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:162:16
+	BN_mul_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:280:3
+	BN_new: () => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:259:11, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:192:11
+	BN_num_bits: (const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:116:3
+	BN_set_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:422:20, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:422:20
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	__assert_fail: (const char*, const char*, unsigned int, const char*) => void 		if (def(BN_DEBUG)&!def(NDEBUG))		at file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83
+	__ctype_b_loc: () => const unsigned short** 		if True		at file /usr/include/ctype.h:88:33, file /usr/include/ctype.h:88:33
+	bn_expand2: (struct bignum_st*, signed int) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:697:80, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:697:80
+exports (8)
+	BN_asc2bn: (struct bignum_st**, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:297:4
+	BN_bn2dec: (const struct bignum_st*) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:103:6
+	BN_bn2hex: (const struct bignum_st*) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:68:6
+	BN_dec2bn: (struct bignum_st**, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:239:4
+	BN_hex2bn: (struct bignum_st**, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:172:4
+	BN_options: () => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:361:6
+	BN_print: (struct bio_st*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:334:4
+	BN_print_fp: (struct _IO_FILE*, const struct bignum_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_print.c:320:4

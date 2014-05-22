@@ -1,0 +1,8 @@
+fm True
+features (0)
+	
+imports (2)
+	RC2_decrypt: (unsigned long*, struct rc2_key_st*) => void 		if !def(OPENSSL_NO_RC2)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_ecb.c:83:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_ecb.c:83:2
+	RC2_encrypt: (unsigned long*, struct rc2_key_st*) => void 		if !def(OPENSSL_NO_RC2)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_ecb.c:81:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_ecb.c:81:2
+exports (1)
+	RC2_ecb_encrypt: (const unsigned char*, unsigned char*, struct rc2_key_st*, signed int) => void 		if !def(OPENSSL_NO_RC2)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_ecb.c:73:5

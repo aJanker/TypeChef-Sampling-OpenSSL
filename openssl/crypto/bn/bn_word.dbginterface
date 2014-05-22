@@ -1,0 +1,18 @@
+fm True
+features (0)
+	
+imports (8)
+	BN_lshift: (struct bignum_st*, const struct bignum_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:107:6
+	BN_num_bits_word: (unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:105:16
+	BN_set_negative: (struct bignum_st*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:185:3
+	BN_set_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:422:20, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:183:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:137:26
+	__assert_fail: (const char*, const char*, unsigned int, const char*) => void 		if (def(BN_DEBUG)&!def(NDEBUG))		at file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83
+	bn_div_words: (unsigned long, unsigned long, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:115:4
+	bn_expand2: (struct bignum_st*, signed int) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:699:56, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:699:56
+	bn_mul_words: (unsigned long*, const unsigned long*, signed int, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:236:6
+exports (5)
+	BN_add_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:126:4
+	BN_div_word: (struct bignum_st*, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:90:9
+	BN_mod_word: (const struct bignum_st*, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:63:9
+	BN_mul_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:224:4
+	BN_sub_word: (struct bignum_st*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_word.c:171:4

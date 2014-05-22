@@ -1,0 +1,18 @@
+fm True
+features (0)
+	
+imports (9)
+	ASN1_STRING_set: (struct asn1_string_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:200:8
+	ASN1_STRING_type_new: (signed int) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:716:63
+	BIO_snprintf: (char*, unsigned long, const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:255:1
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	OPENSSL_gmtime: (const signed long*, struct tm*) => struct tm* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:230:4
+	OPENSSL_gmtime_adj: (struct tm*, signed int, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:236:7
+	strlen: (const char*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:257:11, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:194:10
+exports (4)
+	ASN1_GENERALIZEDTIME_adj: (struct asn1_string_st*, signed long, signed int, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:217:22
+	ASN1_GENERALIZEDTIME_check: (struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:118:4
+	ASN1_GENERALIZEDTIME_set: (struct asn1_string_st*, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:211:22
+	ASN1_GENERALIZEDTIME_set_string: (struct asn1_string_st*, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_gentm.c:189:4

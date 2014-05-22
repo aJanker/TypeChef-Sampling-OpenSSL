@@ -1,0 +1,8 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (2)
+	idea_set_decrypt_key: (struct idea_key_st*, struct idea_key_st*) => void 		if !def(OPENSSL_NO_IDEA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/idea/i_skey.c:105:5
+	idea_set_encrypt_key: (const unsigned char*, struct idea_key_st*) => void 		if !def(OPENSSL_NO_IDEA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/idea/i_skey.c:64:5

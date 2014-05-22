@@ -1,0 +1,25 @@
+fm True
+features (0)
+	
+imports (17)
+	BN_CTX_end: (struct bignum_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:153:1
+	BN_CTX_get: (struct bignum_ctx*) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:85:5, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:84:19
+	BN_CTX_start: (struct bignum_ctx*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:83:1
+	BN_copy: (struct bignum_st*, const struct bignum_st*) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:148:14
+	BN_num_bits_word: (unsigned long) => signed int 		if (!def(OPENSSL_SMALL_FOOTPRINT)|def(BN_RECURSION))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:121:5
+	__assert_fail: (const char*, const char*, unsigned int, const char*) => void 		if (def(BN_DEBUG)&!def(NDEBUG))		at file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83
+	bn_add_words: (unsigned long*, const unsigned long*, const unsigned long*, signed int) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:273:11, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:263:10, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:192:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:186:1
+	bn_cmp_words: (const unsigned long*, const unsigned long*, signed int) => signed int 		if (!def(OPENSSL_SMALL_FOOTPRINT)|def(BN_RECURSION))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:239:4
+	bn_expand2: (struct bignum_st*, signed int) => struct bignum_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:699:56, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:699:56, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:699:56, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h:699:56
+	bn_mul_add_words: (unsigned long*, const unsigned long*, signed int, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:182:8
+	bn_mul_words: (unsigned long*, const unsigned long*, signed int, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:174:8
+	bn_sqr_comba4: (unsigned long*, const unsigned long*) => void 		if (!def(OPENSSL_SMALL_FOOTPRINT)|def(BN_SQR_COMBA))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:218:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:95:2
+	bn_sqr_comba8: (unsigned long*, const unsigned long*) => void 		if (!def(OPENSSL_SMALL_FOOTPRINT)|def(BN_SQR_COMBA))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:227:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:104:2
+	bn_sqr_words: (unsigned long*, const unsigned long*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:190:1
+	bn_sub_words: (unsigned long*, const unsigned long*, const unsigned long*, signed int) => unsigned long 		if (!def(OPENSSL_SMALL_FOOTPRINT)|def(BN_RECURSION))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:266:11, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:244:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:242:2
+	fprintf: (struct _IO_FILE*, const char*, ...) => signed int 		if def(BN_COUNT)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:213:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:72:1
+	memset: (void*, signed int, unsigned long) => void* 		if (!def(OPENSSL_SMALL_FOOTPRINT)|def(BN_RECURSION))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:254:2
+exports (3)
+	BN_sqr: (struct bignum_st*, const struct bignum_st*, struct bignum_ctx*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:65:4
+	bn_sqr_normal: (unsigned long*, const unsigned long*, signed int, unsigned long*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:158:5
+	bn_sqr_recursive: (unsigned long*, const unsigned long*, signed int, unsigned long*) => void 		if (!def(OPENSSL_SMALL_FOOTPRINT)|def(BN_RECURSION))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/bn_sqr.c:206:5

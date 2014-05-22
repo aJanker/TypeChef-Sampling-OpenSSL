@@ -1,0 +1,8 @@
+fm True
+features (0)
+	
+imports (2)
+	DES_decrypt3: (unsigned int*, struct DES_ks*, struct DES_ks*, struct DES_ks*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb3_enc.c:78:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb3_enc.c:78:2
+	DES_encrypt3: (unsigned int*, struct DES_ks*, struct DES_ks*, struct DES_ks*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb3_enc.c:76:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb3_enc.c:76:2
+exports (1)
+	DES_ecb3_encrypt: (unsigned char[]*, unsigned char[]*, struct DES_ks*, struct DES_ks*, struct DES_ks*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb3_enc.c:61:5

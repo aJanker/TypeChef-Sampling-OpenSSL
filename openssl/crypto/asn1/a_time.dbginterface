@@ -1,0 +1,31 @@
+fm True
+features (0)
+	
+imports (17)
+	ASN1_GENERALIZEDTIME_adj: (struct asn1_string_st*, signed long, signed int, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:125:8
+	ASN1_GENERALIZEDTIME_check: (struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:131:9
+	ASN1_GENERALIZEDTIME_new: () => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:148:14
+	ASN1_STRING_copy: (struct asn1_string_st*, const struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:194:11
+	ASN1_STRING_set: (struct asn1_string_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:163:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:157:6
+	ASN1_UTCTIME_adj: (struct asn1_string_st*, signed long, signed int, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:124:10
+	ASN1_UTCTIME_check: (struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:133:9
+	ASN1_item_d2i: (struct ASN1_VALUE_st**, const unsigned char**, signed long, const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:160
+	ASN1_item_free: (struct ASN1_VALUE_st*, const struct ASN1_ITEM_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:194
+	ASN1_item_i2d: (struct ASN1_VALUE_st*, unsigned char**, const struct ASN1_ITEM_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:858:289
+	ASN1_item_new: (const struct ASN1_ITEM_st*) => struct ASN1_VALUE_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1t.h:844:117
+	BUF_strlcat: (char*, const char*, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:172:1
+	BUF_strlcpy: (char*, const char*, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:170:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:169:24
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	OPENSSL_gmtime: (const signed long*, struct tm*) => struct tm* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:112:4
+	OPENSSL_gmtime_adj: (struct tm*, signed int, signed long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:120:7
+	strlen: (const char*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:181:12
+exports (9)
+	ASN1_TIME_adj: (struct asn1_string_st*, signed long, signed int, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:106:11
+	ASN1_TIME_check: (struct asn1_string_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:128:4
+	ASN1_TIME_free: (struct asn1_string_st*) => void 		if True		at string literal: ASN1_TIME_free:1:0
+	ASN1_TIME_new: () => struct asn1_string_st* 		if True		at string literal: ASN1_TIME_new:1:0
+	ASN1_TIME_set: (struct asn1_string_st*, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:101:11
+	ASN1_TIME_set_string: (struct asn1_string_st*, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:177:4
+	ASN1_TIME_to_generalizedtime: (struct asn1_string_st*, struct asn1_string_st**) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_time.c:138:22
+	d2i_ASN1_TIME: (struct asn1_string_st**, const unsigned char**, signed long) => struct asn1_string_st* 		if True		at string literal: d2i_ASN1_TIME:1:0
+	i2d_ASN1_TIME: (struct asn1_string_st*, unsigned char**) => signed int 		if True		at string literal: i2d_ASN1_TIME:1:0

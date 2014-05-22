@@ -1,0 +1,15 @@
+fm True
+features (0)
+	
+imports (8)
+	__errno_location: () => signed int* 		if True		at file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19, file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19, file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19, file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19, file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19, file /usr/include/x86_64-linux-gnu/bits/errno.h:54:19
+	closedir: (struct __dirstream*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:112:16
+	free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:114:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:90:3
+	malloc: (unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:78:27
+	memset: (void*, signed int, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:84:6
+	opendir: (const char*) => struct __dirstream* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:86:20
+	readdir: (struct __dirstream*) => struct dirent* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:97:13
+	strncpy: (char*, const char*, unsigned long) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/LPdir_unix.c:103:2
+exports (2)
+	OPENSSL_DIR_end: (struct OPENSSL_dir_context_st**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/o_dir.c:68:25
+	OPENSSL_DIR_read: (struct OPENSSL_dir_context_st**, const char*) => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/o_dir.c:67:21

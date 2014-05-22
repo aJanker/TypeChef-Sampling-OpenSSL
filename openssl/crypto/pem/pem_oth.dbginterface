@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	PEM_bytes_read_bio: (unsigned char**, signed long*, char**, const char*, struct bio_st*, (char*, signed int, signed int, void*) => signed int*, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_oth.c:78:6
+exports (1)
+	PEM_ASN1_read_bio: ((void**, const unsigned char**, signed long) => void**, const char*, struct bio_st*, void**, (char*, signed int, signed int, void*) => signed int*, void*) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pem/pem_oth.c:70:6

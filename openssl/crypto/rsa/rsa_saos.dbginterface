@@ -1,0 +1,18 @@
+fm True
+features (0)
+	
+imports (11)
+	ASN1_STRING_free: (struct asn1_string_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/asn1.h:614:36
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:145:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:99:1
+	RSA_private_encrypt: (signed int, const unsigned char*, unsigned char*, struct rsa_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:93:3
+	RSA_public_decrypt: (signed int, const unsigned char*, unsigned char*, struct rsa_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:126:3
+	RSA_size: (const struct rsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:114:29, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:79:3
+	d2i_ASN1_OCTET_STRING: (struct asn1_string_st**, const unsigned char**, signed long) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:131:5
+	i2d_ASN1_OCTET_STRING: (struct asn1_string_st*, unsigned char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:92:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:78:3
+	memcmp: (const void*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:135:3
+exports (2)
+	RSA_sign_ASN1_OCTET_STRING: (signed int, const unsigned char*, unsigned int, unsigned char*, unsigned int*, struct rsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:66:4
+	RSA_verify_ASN1_OCTET_STRING: (signed int, const unsigned char*, unsigned int, unsigned char*, unsigned int, struct rsa_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rsa/rsa_saos.c:104:4

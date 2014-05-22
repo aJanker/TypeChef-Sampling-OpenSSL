@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (2)
+	BIO_snprintf: (char*, unsigned long, const char*, ...) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb_enc.c:100:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb_enc.c:100:2
+	DES_encrypt1: (unsigned int*, struct DES_ks*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb_enc.c:118:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb_enc.c:118:1
+exports (2)
+	DES_ecb_encrypt: (unsigned char[]*, unsigned char[]*, struct DES_ks*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb_enc.c:108:5
+	DES_options: () => const char* 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ecb_enc.c:67:12

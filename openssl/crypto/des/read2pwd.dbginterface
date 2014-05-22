@@ -1,0 +1,11 @@
+fm True
+features (0)
+	
+imports (4)
+	DES_string_to_2keys: (const char*, unsigned char[]*, unsigned char[]*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:136:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:136:2
+	DES_string_to_key: (const char*, unsigned char[]*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:123:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:123:2
+	OPENSSL_cleanse: (void*, unsigned long) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:138:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:138:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:137:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:137:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:125:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:125:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:124:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:124:1
+	UI_UTIL_read_pw: (char*, char*, signed int, const char*, signed int) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:135:9, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:135:9, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:122:9, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:122:9
+exports (2)
+	DES_read_2passwords: (unsigned char[]*, unsigned char[]*, const char*, signed int) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:129:4
+	DES_read_password: (unsigned char[]*, const char*, signed int) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/read2pwd.c:117:4

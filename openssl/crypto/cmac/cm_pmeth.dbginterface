@@ -1,0 +1,19 @@
+fm True
+features (0)
+	
+imports (13)
+	CMAC_CTX_copy: (struct CMAC_CTX_st*, const struct CMAC_CTX_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:141:20, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:92:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:76:6
+	CMAC_CTX_free: (struct CMAC_CTX_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:94:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:83:1
+	CMAC_CTX_new: () => struct CMAC_CTX_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:88:19, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:65:13
+	CMAC_Final: (struct CMAC_CTX_st*, unsigned char*, unsigned long*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:119:8
+	CMAC_Init: (struct CMAC_CTX_st*, const void*, unsigned long, const struct evp_cipher_st*, struct engine_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:144:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:136:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:131:7
+	CMAC_Update: (struct CMAC_CTX_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:104:6
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	EVP_MD_CTX_set_flags: (struct env_md_ctx_st*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:111:1
+	EVP_PKEY_assign: (struct evp_pkey_st*, signed int, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:97:1
+	EVP_get_cipherbyname: (const char*) => const struct evp_cipher_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:171:6
+	strcmp: (const char*, const char*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:176:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:168:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:162:6
+	string_to_hex: (const char*, signed long*) => unsigned char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:181:8
+	strlen: (const char*) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:166:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_pmeth.c:166:8
+exports (0)
+

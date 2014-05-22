@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (1)
+	SSLv2_method: () => const struct ssl_method_st* 		if (!def(OPENSSL_NO_HMAC)&!def(OPENSSL_NO_SSL2))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s2_meth.c:73:25

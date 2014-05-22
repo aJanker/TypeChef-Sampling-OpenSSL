@@ -1,0 +1,20 @@
+fm True
+features (0)
+	
+imports (6)
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_PKEY_CTX_ctrl: (struct evp_pkey_ctx_st*, signed int, signed int, signed int, signed int, void*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:211:5
+	EVP_PKEY_CTX_free: (struct evp_pkey_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:219:2
+	EVP_PKEY_CTX_new_id: (signed int, struct engine_st*) => struct evp_pkey_ctx_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:206:11
+	EVP_PKEY_free: (struct evp_pkey_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:159:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:110:2
+	EVP_PKEY_new: () => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:154:11, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:105:11
+exports (9)
+	EVP_PKEY_CTX_get_cb: (struct evp_pkey_ctx_st*) => (struct evp_pkey_ctx_st*) => signed int* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:170:17
+	EVP_PKEY_CTX_get_keygen_info: (struct evp_pkey_ctx_st*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:192:4
+	EVP_PKEY_CTX_set_cb: (struct evp_pkey_ctx_st*, (struct evp_pkey_ctx_st*) => signed int*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:165:5
+	EVP_PKEY_keygen: (struct evp_pkey_ctx_st*, struct evp_pkey_st**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:134:4
+	EVP_PKEY_keygen_init: (struct evp_pkey_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:116:4
+	EVP_PKEY_new_mac_key: (signed int, struct engine_st*, const unsigned char*, signed int) => struct evp_pkey_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:201:10
+	EVP_PKEY_paramgen: (struct evp_pkey_ctx_st*, struct evp_pkey_st**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:85:4
+	EVP_PKEY_paramgen_init: (struct evp_pkey_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:67:4
+	evp_pkey_set_cb_translate: (struct bn_gencb_st*, struct evp_pkey_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/pmeth_gn.c:187:5

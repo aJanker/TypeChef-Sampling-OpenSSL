@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	s2i_ASN1_INTEGER: (struct v3_ext_method*, char*) => struct asn1_string_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_int.c:79:8
+exports (0)
+

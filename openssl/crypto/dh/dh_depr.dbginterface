@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	DH_free: (struct dh_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_depr.c:80:1
+	DH_generate_parameters_ex: (struct dh_st*, signed int, signed int, struct bn_gencb_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_depr.c:78:4
+	DH_new: () => struct dh_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_depr.c:73:9
+exports (1)
+	DH_generate_parameters: (signed int, signed int, (signed int, signed int, void*) => void*, void*) => struct dh_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dh/dh_depr.c:67:4

@@ -1,0 +1,17 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (11)
+	bn_add_words: (unsigned long*, const unsigned long*, const unsigned long*, signed int) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:187:9
+	bn_div_words: (unsigned long, unsigned long, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:176:9
+	bn_mul_add_words: (unsigned long*, const unsigned long*, signed int, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:109:9
+	bn_mul_comba4: (unsigned long*, unsigned long*, unsigned long*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:457:5
+	bn_mul_comba8: (unsigned long*, unsigned long*, unsigned long*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:353:5
+	bn_mul_words: (unsigned long*, const unsigned long*, signed int, unsigned long) => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:133:9
+	bn_sqr_comba4: (unsigned long*, const unsigned long*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:573:5
+	bn_sqr_comba8: (unsigned long*, const unsigned long*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:497:5
+	bn_sqr_words: (unsigned long*, const unsigned long*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:156:5
+	bn_sub_words: (unsigned long*, const unsigned long*, const unsigned long*, signed int) => unsigned long 		if !def(SIMICS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:210:9
+	bn_sub_words: (unsigned long*, unsigned long*, unsigned long*, signed int) => unsigned long 		if def(SIMICS)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bn/asm/x86_64-gcc.c:234:9

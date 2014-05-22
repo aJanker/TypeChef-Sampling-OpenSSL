@@ -1,0 +1,3396 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                ERR_put_error
+            </name>
+            <type>
+                <function><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><signed>
+        <int/>
+    </signed></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h
+            </file>
+            <line>
+                135
+            </line>
+            <col>
+                33
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_check_known_gN_param
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                418
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                418
+            </line>
+            <col>
+                3
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Verify_B_mod_N
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                382
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                382
+            </line>
+            <col>
+                5
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Calc_u
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                383
+            </line>
+            <col>
+                11
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                383
+            </line>
+            <col>
+                11
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                351
+            </line>
+            <col>
+                11
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                351
+            </line>
+            <col>
+                11
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                ssl3_ctx_ctrl
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <long/>
+    </signed></param><param><pointer>
+        <void/>
+    </pointer></param><ret><signed>
+        <long/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                463
+            </line>
+            <col>
+                22
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_bn2bin
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                391
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                391
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                359
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                359
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                OPENSSL_cleanse
+            </name>
+            <type>
+                <function><param><pointer>
+        <void/>
+    </pointer></param><param><unsigned>
+        <long/>
+    </unsigned></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                423
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                423
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                403
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                403
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                396
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                396
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                364
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                364
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                247
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                247
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                strlen
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><ret><unsigned>
+        <long/>
+    </unsigned></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                403
+            </line>
+            <col>
+                25
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                403
+            </line>
+            <col>
+                25
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                403
+            </line>
+            <col>
+                25
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                403
+            </line>
+            <col>
+                25
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Calc_x
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                386
+            </line>
+            <col>
+                11
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                386
+            </line>
+            <col>
+                11
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Calc_client_key
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                387
+            </line>
+            <col>
+                11
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                387
+            </line>
+            <col>
+                11
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Calc_server_key
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                353
+            </line>
+            <col>
+                11
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                353
+            </line>
+            <col>
+                11
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Calc_A
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                425
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                425
+            </line>
+            <col>
+                22
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                CRYPTO_malloc
+            </name>
+            <type>
+                <function><param><signed>
+        <int/>
+    </signed></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><signed>
+        <int/>
+    </signed></param><ret><pointer>
+        <void/>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                368
+            </line>
+            <col>
+                28
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                368
+            </line>
+            <col>
+                28
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                368
+            </line>
+            <col>
+                28
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                368
+            </line>
+            <col>
+                28
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                CRYPTO_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <void/>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h
+            </file>
+            <line>
+                377
+            </line>
+            <col>
+                27
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_create_verifier_BN
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><pointer>
+        <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+    </pointer></param><param><pointer>
+        <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                272
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                272
+            </line>
+            <col>
+                5
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_dup
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                330
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                330
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                317
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                317
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                304
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                304
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                291
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                291
+            </line>
+            <col>
+                18
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                261
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                261
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                260
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                260
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                171
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                171
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                169
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                169
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                167
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                167
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                165
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                165
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                163
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                163
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                161
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                161
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                159
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                159
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                157
+            </line>
+            <col>
+                20
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                157
+            </line>
+            <col>
+                20
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_num_bits
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                414
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                414
+            </line>
+            <col>
+                5
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h
+            </file>
+            <line>
+                402
+            </line>
+            <col>
+                26
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h
+            </file>
+            <line>
+                402
+            </line>
+            <col>
+                26
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h
+            </file>
+            <line>
+                402
+            </line>
+            <col>
+                26
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bn.h
+            </file>
+            <line>
+                402
+            </line>
+            <col>
+                26
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BUF_strdup
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><ret><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                177
+            </line>
+            <col>
+                23
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                177
+            </line>
+            <col>
+                23
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                325
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                325
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                312
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                312
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                299
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                299
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                286
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                286
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                194
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                194
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                193
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                193
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                192
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                192
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                191
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                191
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                190
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                190
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                189
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                189
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                188
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                188
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                187
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                187
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                110
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                110
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                109
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                109
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                108
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                108
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                107
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                107
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                106
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                106
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                105
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                105
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                104
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                104
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                103
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                103
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                78
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                78
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                77
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                77
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                76
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                76
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                75
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                75
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                74
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                74
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                73
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                73
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                72
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                72
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                71
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                71
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_get_default_gN
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        SRP_gN_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                258
+            </line>
+            <col>
+                14
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                258
+            </line>
+            <col>
+                14
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                ssl3_ctx_callback_ctrl
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <function><ret><void/></ret></function>
+    </pointer></param><ret><signed>
+        <long/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                464
+            </line>
+            <col>
+                31
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                464
+            </line>
+            <col>
+                31
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                464
+            </line>
+            <col>
+                31
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                464
+            </line>
+            <col>
+                31
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                464
+            </line>
+            <col>
+                31
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                464
+            </line>
+            <col>
+                31
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_clear_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><void/></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                406
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                406
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                400
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                400
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                399
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                399
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                368
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                368
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                367
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                367
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                269
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                269
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                264
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                264
+            </line>
+            <col>
+                2
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                RAND_bytes
+            </name>
+            <type>
+                <function><param><pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                421
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                421
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                245
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                245
+            </line>
+            <col>
+                1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Verify_A_mod_N
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                349
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                349
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_bin2bn
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer>
+        </const></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                422
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                422
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                246
+            </line>
+            <col>
+                16
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                246
+            </line>
+            <col>
+                16
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BN_copy
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                323
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                323
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                310
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                310
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                297
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                297
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                284
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                284
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SRP_Calc_B
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                251
+            </line>
+            <col>
+                25
+            </col>
+        </pos><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                251
+            </line>
+            <col>
+                25
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                SSL_CTX_set_srp_client_pwd_callback
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><pointer>
+        <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><pointer>
+        <void/>
+    </pointer></param><ret><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></ret></function>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                500
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_set_srp_username_callback
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><pointer>
+        <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><pointer>
+        <signed>
+        <int/>
+    </signed>
+    </pointer></param><param><pointer>
+        <void/>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                493
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_set_srp_cb_arg
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><pointer>
+        <void/>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                488
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_set_srp_verify_param_callback
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><pointer>
+        <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><pointer>
+        <void/>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                482
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_set_srp_strength
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                476
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_set_srp_password
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                471
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_set_srp_username
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><param><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                466
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_get_srp_userinfo
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                456
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_get_srp_username
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                449
+            </line>
+            <col>
+                6
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_get_srp_N
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                442
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_get_srp_g
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                435
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SRP_Calc_A_param
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                410
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SRP_generate_client_master_secret
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                373
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SRP_generate_server_master_secret
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><pointer>
+        <unsigned>
+        <char/>
+    </unsigned>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                343
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_set_srp_server_param
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer>
+        </const></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bignum_st
+    </struct>
+    </pointer></param><param><pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                277
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_set_srp_server_param_pw
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                256
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_srp_server_param_with_username
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><param><pointer>
+        <signed>
+        <int/>
+    </signed>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                228
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_SRP_CTX_init
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                198
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_SRP_CTX_init
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                130
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_SRP_CTX_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                98
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SSL_CTX_SRP_CTX_free
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        ssl_ctx_st
+    </struct>
+    </pointer></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                (!definedEx(OPENSSL_NO_HMAC) &amp;&amp; !definedEx(OPENSSL_NO_SRP))
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/tls_srp.c
+            </file>
+            <line>
+                66
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

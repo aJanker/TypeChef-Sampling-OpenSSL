@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (1)
+	fcrypt_body: (unsigned int*, struct DES_ks*, unsigned int, unsigned int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/fcrypt_b.c:80:5

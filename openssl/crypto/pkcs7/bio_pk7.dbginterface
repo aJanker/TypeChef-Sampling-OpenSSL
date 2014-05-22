@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	BIO_new_NDEF: (struct bio_st*, struct ASN1_VALUE_st*, const struct ASN1_ITEM_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/bio_pk7.c:68:8
+exports (1)
+	BIO_new_PKCS7: (struct bio_st*, struct pkcs7_st*) => struct bio_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/bio_pk7.c:66:5

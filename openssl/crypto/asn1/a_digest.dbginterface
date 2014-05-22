@@ -1,0 +1,12 @@
+fm True
+features (0)
+	
+imports (5)
+	ASN1_item_i2d: (struct ASN1_VALUE_st*, unsigned char**, const struct ASN1_ITEM_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_digest.c:105:3
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if !def(NO_ASN1_OLD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	ERR_put_error: (signed int, signed int, signed int, const char*, signed int) => void 		if !def(NO_ASN1_OLD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/err.h:135:33
+	EVP_Digest: (const void*, unsigned long, unsigned char*, unsigned int*, const struct env_md_st*, struct engine_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_digest.c:108:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_digest.c:90:6
+exports (2)
+	ASN1_digest: ((void*, unsigned char**) => signed int*, const struct env_md_st*, char*, unsigned char*, unsigned int*) => signed int 		if !def(NO_ASN1_OLD)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_digest.c:75:4
+	ASN1_item_digest: (const struct ASN1_ITEM_st*, const struct env_md_st*, void*, unsigned char*, unsigned int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_digest.c:99:4

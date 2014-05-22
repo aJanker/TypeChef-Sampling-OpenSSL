@@ -1,0 +1,12 @@
+fm True
+features (0)
+	
+imports (3)
+	BUF_strdup: (const char*) => char* 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:86:22, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:86:22, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:72:23, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:72:23
+	CRYPTO_free: (void*) => void 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	getenv: (const char*) => char* 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:82:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:82:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:68:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:68:7
+exports (4)
+	get_gost_engine_param: (signed int) => const char* 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:60:12
+	gost_control_func: (struct engine_st*, signed int, signed long, void*, () => void*) => signed int 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:51:4
+	gost_param_free: () => void 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:39:5
+	gost_set_default_param: (signed int, const char*) => signed int 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/engines/ccgost/gost_ctl.c:78:4

@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	MD5_Final: (unsigned char*, struct MD5state_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_md5.c:80:10
+	MD5_Init: (struct MD5state_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_md5.c:74:10
+	MD5_Update: (struct MD5state_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_md5.c:77:10
+exports (1)
+	EVP_md5: () => const struct env_md_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/m_md5.c:98:14

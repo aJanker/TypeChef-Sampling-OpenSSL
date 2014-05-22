@@ -1,0 +1,23 @@
+fm True
+features (0)
+	
+imports (6)
+	CRYPTO_free: (void*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:377:27
+	CRYPTO_malloc: (signed int, const char*, signed int) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/crypto.h:368:28
+	memcmp: (const void*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:186:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:178:7, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:127:12
+	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:76:1
+	memset: (void*, signed int, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:98:1
+	printf: (const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:209:2
+exports (12)
+	pitem_free: (struct _pitem*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:85:0
+	pitem_new: (unsigned char*, void*) => struct _pitem* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:71:0
+	pqueue_find: (struct _pqueue*, unsigned char*) => struct _pitem* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:168:0
+	pqueue_free: (struct _pqueue*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:103:0
+	pqueue_insert: (struct _pqueue*, struct _pitem*) => struct _pitem* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:111:0
+	pqueue_iterator: (struct _pqueue*) => struct _pitem* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:219:0
+	pqueue_new: () => struct _pqueue* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:93:0
+	pqueue_next: (struct _pitem**) => struct _pitem* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:225:0
+	pqueue_peek: (struct _pqueue*) => struct _pitem* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:151:0
+	pqueue_pop: (struct _pqueue*) => struct _pitem* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:157:0
+	pqueue_print: (struct _pqueue*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:203:0
+	pqueue_size: (struct _pqueue*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pqueue/pqueue.c:241:0

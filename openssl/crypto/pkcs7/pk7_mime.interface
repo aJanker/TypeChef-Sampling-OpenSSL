@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<interface>
+            <featuremodel>
+                1
+            </featuremodel><import>
+            <sig>
+            <name>
+                SMIME_write_ASN1
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><param><signed>
+        <int/>
+    </signed></param><param><pointer>
+        <struct isUnion="false">
+        stack_st_X509_ALGOR
+    </struct>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                89
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                i2d_ASN1_bio_stream
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                66
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                OBJ_obj2nid
+            </name>
+            <type>
+                <function><param><const>
+            <pointer>
+        <struct isUnion="false">
+        asn1_object_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                80
+            </line>
+            <col>
+                17
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                SMIME_read_ASN1
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer>
+    </pointer></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                96
+            </line>
+            <col>
+                17
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                PEM_write_bio_ASN1_stream
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        ASN1_VALUE_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><param><const>
+            <pointer>
+        <nosign>
+        <char/>
+    </nosign>
+    </pointer>
+        </const></param><param><const>
+            <pointer>
+        <struct isUnion="false">
+        ASN1_ITEM_st
+    </struct>
+    </pointer>
+        </const></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                72
+            </line>
+            <col>
+                8
+            </col>
+        </pos>
+        </sig>
+        </import><export>
+            <sig>
+            <name>
+                SMIME_read_PKCS7
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer>
+    </pointer></param><ret><pointer>
+        <struct isUnion="false">
+        pkcs7_st
+    </struct>
+    </pointer></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                94
+            </line>
+            <col>
+                7
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                SMIME_write_PKCS7
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        pkcs7_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                77
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                PEM_write_bio_PKCS7_stream
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        pkcs7_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                70
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                i2d_PKCS7_bio_stream
+            </name>
+            <type>
+                <function><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        pkcs7_st
+    </struct>
+    </pointer></param><param><pointer>
+        <struct isUnion="false">
+        bio_st
+    </struct>
+    </pointer></param><param><signed>
+        <int/>
+    </signed></param><ret><signed>
+        <int/>
+    </signed></ret></function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/pkcs7/pk7_mime.c
+            </file>
+            <line>
+                64
+            </line>
+            <col>
+                4
+            </col>
+        </pos>
+        </sig>
+        </export>
+        </interface>

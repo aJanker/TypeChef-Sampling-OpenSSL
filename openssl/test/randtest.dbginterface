@@ -1,0 +1,9 @@
+fm True
+features (0)
+	
+imports (3)
+	RAND_pseudo_bytes: (unsigned char*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:78:5
+	exit: (signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/../e_os.h:470:21
+	printf: (const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:211:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:207:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:201:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:196:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:191:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:185:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:179:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:173:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:167:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:161:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:154:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:151:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:131:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:128:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:81:2
+exports (1)
+	main: (signed int, char**) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/test/randtest.c:68:4

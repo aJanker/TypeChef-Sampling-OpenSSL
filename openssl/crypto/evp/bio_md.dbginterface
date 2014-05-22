@@ -1,0 +1,18 @@
+fm True
+features (0)
+	
+imports (12)
+	BIO_callback_ctrl: (struct bio_st*, signed int, (struct bio_st*, signed int, const char*, signed int, signed long, signed long) => void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:246:6
+	BIO_clear_flags: (struct bio_st*, signed int) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/include/openssl/bio.h:246:35
+	BIO_copy_next_retry: (struct bio_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:215:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:167:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:138:1
+	BIO_ctrl: (struct bio_st*, signed int, signed long, void*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:232:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:214:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:190:7
+	BIO_read: (struct bio_st*, void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:128:5
+	BIO_write: (struct bio_st*, const void*, signed int) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:151:6
+	EVP_DigestFinal_ex: (struct env_md_ctx_st*, unsigned char*, unsigned int*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:261:5
+	EVP_DigestInit_ex: (struct env_md_ctx_st*, const struct env_md_st*, struct engine_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:220:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:186:9
+	EVP_DigestUpdate: (struct env_md_ctx_st*, const void*, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:156:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:133:7
+	EVP_MD_CTX_copy_ex: (struct env_md_ctx_st*, const struct env_md_ctx_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:227:7
+	EVP_MD_CTX_create: () => struct env_md_ctx_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:99:5
+	EVP_MD_CTX_destroy: (struct env_md_ctx_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:111:1
+exports (1)
+	BIO_f_md: () => struct bio_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/bio_md.c:90:12

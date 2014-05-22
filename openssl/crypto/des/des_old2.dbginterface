@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	RAND_seed: (const void*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/des_old2.c:81:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/des_old2.c:81:1
+exports (1)
+	_ossl_096_des_random_seed: (unsigned char[]*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/des_old2.c:79:5

@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	CMAC_CTX_free: (struct CMAC_CTX_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cmac/cm_ameth.c:73:2
+exports (0)
+

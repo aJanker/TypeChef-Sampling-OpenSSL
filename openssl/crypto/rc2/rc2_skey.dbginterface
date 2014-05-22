@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (0)
+
+exports (1)
+	RC2_set_key: (struct rc2_key_st*, signed int, const unsigned char*, signed int) => void 		if !def(OPENSSL_NO_RC2)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_skey.c:98:5
