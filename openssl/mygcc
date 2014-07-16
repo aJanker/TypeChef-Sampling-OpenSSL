@@ -56,7 +56,7 @@ then
 	# create the serialized AST in the first run
 	# apply sampling and family-based analysis for each strategy afterwards
 	# in a single run
-	$ABSPATH/../../TypeChef/cRefactor.sh \
+	$ABSPATH/../../Morpheus/morpheus.sh \
 		$baseParam \
 		$FNAME
 		2> "$outErr" | tee -a "$outDbg"
