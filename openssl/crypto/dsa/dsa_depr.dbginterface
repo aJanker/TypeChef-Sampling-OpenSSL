@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (3)
-	DSA_free: (struct dsa_st*) => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_depr.c:102:1
-	DSA_generate_parameters_ex: (struct dsa_st*, signed int, const unsigned char*, signed int, signed int*, unsigned long*, struct bn_gencb_st*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_depr.c:99:4
-	DSA_new: () => struct dsa_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_depr.c:95:10
-exports (1)
-	DSA_generate_parameters: (signed int, unsigned char*, signed int, signed int*, unsigned long*, (signed int, signed int, void*) => void*, void*) => struct dsa_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dsa/dsa_depr.c:86:5

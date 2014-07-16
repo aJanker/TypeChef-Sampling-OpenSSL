@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (3)
-	ASN1_ENUMERATED_get: (struct asn1_string_st*) => signed long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_enum.c:92:10
-	BUF_strdup: (const char*) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_enum.c:94:36
-	i2s_ASN1_ENUMERATED: (struct v3_ext_method*, struct asn1_string_st*) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_enum.c:96:8
-exports (1)
-	i2s_ASN1_ENUMERATED_TABLE: (struct v3_ext_method*, struct asn1_string_st*) => char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509v3/v3_enum.c:87:6

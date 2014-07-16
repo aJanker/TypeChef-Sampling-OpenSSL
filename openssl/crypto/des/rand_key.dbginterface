@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (3)
-	DES_is_weak_key: (unsigned char[]*) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/rand_key.c:65:11, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/rand_key.c:65:11
-	DES_set_odd_parity: (unsigned char[]*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/rand_key.c:66:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/rand_key.c:66:1
-	RAND_bytes: (unsigned char*, signed int) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/rand_key.c:63:6, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/rand_key.c:63:6
-exports (1)
-	DES_random_key: (unsigned char[]*) => signed int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/rand_key.c:59:4

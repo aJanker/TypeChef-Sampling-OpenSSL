@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (3)
-	Camellia_decrypt: (const unsigned char*, unsigned char*, const struct camellia_key_st*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ecb.c:72:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ecb.c:72:2
-	Camellia_encrypt: (const unsigned char*, unsigned char*, const struct camellia_key_st*) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ecb.c:70:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ecb.c:70:2
-	__assert_fail: (const char*, const char*, unsigned int, const char*) => void 		if (!def(NDEBUG)&!def(OPENSSL_NO_CAMELLIA)&def(CAMELLIA_DEBUG))		at file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83, file /usr/include/assert.h:88:83
-exports (1)
-	Camellia_ecb_encrypt: (const unsigned char*, unsigned char*, const struct camellia_key_st*, const signed int) => void 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_ecb.c:62:5

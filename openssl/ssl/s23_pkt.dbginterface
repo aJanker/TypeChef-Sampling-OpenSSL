@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (2)
-	BIO_read: (struct bio_st*, void*, signed int) => signed int 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s23_pkt.c:105:5, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s23_pkt.c:105:5
-	BIO_write: (struct bio_st*, const void*, signed int) => signed int 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s23_pkt.c:77:4, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s23_pkt.c:77:4
-exports (2)
-	ssl23_read_bytes: (struct ssl_st*, signed int) => signed int 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s23_pkt.c:93:4
-	ssl23_write_bytes: (struct ssl_st*) => signed int 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/s23_pkt.c:66:4

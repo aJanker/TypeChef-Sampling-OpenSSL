@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (3)
-	BF_encrypt: (unsigned int*, const struct bf_key_st*) => void 		if (!def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:119:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:119:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:119:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:111:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:111:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:111:2
-	BF_encrypt: (unsigned long*, const struct bf_key_st*) => void 		if (def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:119:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:119:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:119:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:111:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:111:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:111:2
-	memcpy: (void*, const void*, unsigned long) => void* 		if !def(OPENSSL_NO_BF)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:80:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:80:1
-exports (1)
-	BF_set_key: (struct bf_key_st*, signed int, const unsigned char*) => void 		if !def(OPENSSL_NO_BF)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_skey.c:66:5

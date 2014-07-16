@@ -1,8 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	BIO_snprintf: (char*, unsigned long, const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cversion.c:96:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cversion.c:85:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cversion.c:74:2
-exports (2)
-	SSLeay: () => unsigned long 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cversion.c:113:14
-	SSLeay_version: (signed int) => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cversion.c:65:12

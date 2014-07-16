@@ -1,8 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	idea_encrypt: (unsigned long*, struct idea_key_st*) => void 		if !def(OPENSSL_NO_IDEA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/idea/i_ecb.c:80:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/idea/i_ecb.c:80:1
-exports (2)
-	idea_ecb_encrypt: (const unsigned char*, unsigned char*, struct idea_key_st*) => void 		if !def(OPENSSL_NO_IDEA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/idea/i_ecb.c:73:5
-	idea_options: () => const char* 		if !def(OPENSSL_NO_IDEA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/idea/i_ecb.c:65:12

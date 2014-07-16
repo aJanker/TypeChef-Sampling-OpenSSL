@@ -1,8 +1,0 @@
-fm True
-features (0)
-	
-imports (2)
-	ERR_func_error_string: (unsigned long) => const char* 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_err.c:158:5
-	ERR_load_strings: (signed int, struct ERR_string_data_st*) => void 		if !def(OPENSSL_NO_ERR)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_err.c:161:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_err.c:160:2
-exports (1)
-	ERR_load_X509_strings: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_err.c:154:5

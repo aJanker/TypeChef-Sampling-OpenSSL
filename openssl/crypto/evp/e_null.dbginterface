@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_null.c:101:2
-exports (1)
-	EVP_enc_null: () => const struct evp_cipher_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/evp/e_null.c:85:18

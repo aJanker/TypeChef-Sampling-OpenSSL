@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	private_Camellia_set_key: (const unsigned char*, const signed int, struct camellia_key_st*) => signed int 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_utl.c:63:8, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_utl.c:63:8
-exports (1)
-	Camellia_set_key: (const unsigned char*, const signed int, struct camellia_key_st*) => signed int 		if !def(OPENSSL_NO_CAMELLIA)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/camellia/cmll_utl.c:57:4

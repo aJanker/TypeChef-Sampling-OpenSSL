@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (0)
-
-exports (1)
-	DES_quad_cksum: (const unsigned char*, unsigned char[]*, signed long, signed int, unsigned char[]*) => unsigned int 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/qud_cksm.c:76:9

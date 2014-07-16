@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	memcpy: (void*, const void*, unsigned long) => void* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/comp/c_rle.c:58:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/comp/c_rle.c:40:1
-exports (1)
-	COMP_rle: () => struct comp_method_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/comp/c_rle.c:23:13

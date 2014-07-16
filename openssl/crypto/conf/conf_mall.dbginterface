@@ -1,8 +1,0 @@
-fm True
-features (0)
-	
-imports (2)
-	ASN1_add_oid_module: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_mall.c:75:1
-	ENGINE_add_conf_module: () => void 		if !def(OPENSSL_NO_ENGINE)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_mall.c:77:1, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_mall.c:77:1
-exports (1)
-	OPENSSL_load_builtin_modules: () => void 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/conf/conf_mall.c:72:5

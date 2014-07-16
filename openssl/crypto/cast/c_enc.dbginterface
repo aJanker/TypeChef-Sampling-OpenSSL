@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (0)
-
-exports (3)
-	CAST_cbc_encrypt: (const unsigned char*, unsigned char*, signed long, const struct cast_key_st*, unsigned char*, signed int) => void 		if !def(OPENSSL_NO_CAST)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cast/c_enc.c:128:5
-	CAST_decrypt: (unsigned int*, const struct cast_key_st*) => void 		if !def(OPENSSL_NO_CAST)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cast/c_enc.c:95:5
-	CAST_encrypt: (unsigned int*, const struct cast_key_st*) => void 		if !def(OPENSSL_NO_CAST)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/cast/c_enc.c:62:5

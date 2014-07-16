@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (0)
-
-exports (3)
-	RC2_cbc_encrypt: (const unsigned char*, unsigned char*, signed long, struct rc2_key_st*, unsigned char*, signed int) => void 		if !def(OPENSSL_NO_RC2)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_cbc.c:62:5
-	RC2_decrypt: (unsigned long*, struct rc2_key_st*) => void 		if !def(OPENSSL_NO_RC2)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_cbc.c:181:5
-	RC2_encrypt: (unsigned long*, struct rc2_key_st*) => void 		if !def(OPENSSL_NO_RC2)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/rc2/rc2_cbc.c:136:5

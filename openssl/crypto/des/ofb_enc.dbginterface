@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	DES_encrypt1: (unsigned int*, struct DES_ks*, signed int) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ofb_enc.c:105:2, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ofb_enc.c:105:2
-exports (1)
-	DES_ofb_encrypt: (const unsigned char*, unsigned char*, signed int, signed long, struct DES_ks*, unsigned char[]*) => void 		if !def(OPENSSL_NO_DES)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/des/ofb_enc.c:67:5

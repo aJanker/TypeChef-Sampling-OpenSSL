@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (0)
-
-exports (3)
-	TLSv1_1_server_method: () => const struct ssl_method_st* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/t1_srvr.c:84:40
-	TLSv1_2_server_method: () => const struct ssl_method_st* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/t1_srvr.c:79:40
-	TLSv1_server_method: () => const struct ssl_method_st* 		if !def(OPENSSL_NO_HMAC)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/ssl/t1_srvr.c:89:38

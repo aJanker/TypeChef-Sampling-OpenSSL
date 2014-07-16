@@ -1,8 +1,0 @@
-fm True
-features (0)
-	
-imports (2)
-	BF_encrypt: (unsigned int*, const struct bf_key_st*) => void 		if (!def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ofb64.c:90:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ofb64.c:90:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ofb64.c:90:3
-	BF_encrypt: (unsigned long*, const struct bf_key_st*) => void 		if (def(_CRAY)&!def(OPENSSL_NO_BF))		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ofb64.c:90:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ofb64.c:90:3, file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ofb64.c:90:3
-exports (1)
-	BF_ofb64_encrypt: (const unsigned char*, unsigned char*, signed long, const struct bf_key_st*, unsigned char*, signed int*) => void 		if !def(OPENSSL_NO_BF)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/bf/bf_ofb64.c:66:5

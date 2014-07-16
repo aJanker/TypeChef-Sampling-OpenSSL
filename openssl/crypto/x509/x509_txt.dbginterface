@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	BIO_snprintf: (char*, unsigned long, const char*, ...) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_txt.c:188:2
-exports (1)
-	X509_verify_cert_error_string: (signed long) => const char* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/x509/x509_txt.c:71:12

@@ -1,8 +1,0 @@
-fm True
-features (0)
-	
-imports (0)
-
-exports (2)
-	UTF8_getc: (const unsigned char*, signed int, unsigned long*) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_utf8.c:76:4
-	UTF8_putc: (unsigned char*, signed int, unsigned long) => signed int 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/asn1/a_utf8.c:155:4

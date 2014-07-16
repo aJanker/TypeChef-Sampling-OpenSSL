@@ -1,9 +1,0 @@
-fm True
-features (0)
-	
-imports (0)
-
-exports (3)
-	SEED_decrypt: (const unsigned char*, unsigned char*, const struct seed_key_st*) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed.c:292:5
-	SEED_encrypt: (const unsigned char*, unsigned char*, const struct seed_key_st*) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed.c:249:5
-	SEED_set_key: (const unsigned char*, struct seed_key_st*) => void 		if !def(OPENSSL_NO_SEED)		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/seed/seed.c:200:5

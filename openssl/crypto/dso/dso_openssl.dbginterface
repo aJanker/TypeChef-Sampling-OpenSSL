@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	DSO_METHOD_dlfcn: () => struct dso_meth_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dso/dso_openssl.c:70:8
-exports (1)
-	DSO_METHOD_openssl: () => struct dso_meth_st* 		if True		at file /local/janker/paper/cRefactor-OpenSSLEvaluation/openssl/crypto/dso/dso_openssl.c:65:12
