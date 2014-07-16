@@ -4,6 +4,12 @@ path=$(cd "$(dirname "$0")"; pwd)
 echo "$path"
 cd $path
 
+cd openssl
+
+make 2>&1 | tee makelog
+
+cd $path
+
 filesToProcess() {
   local listFile=$path/openssl_files
   cat $listFile | sed "${1}~8p" 
