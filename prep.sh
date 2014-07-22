@@ -12,7 +12,7 @@ cd $path
 
 filesToProcess() {
   local listFile=$path/openssl_files
-  cat $listFile | sed "${1}~8p" 
+  cat $listFile | sed -n "${1}~8p" 
 }
 #echo "Generating interface"
 # ../Morpheus/morpheus.sh $path/openssl/ssl/t1_meth.c --study openssl --writeProjectInterface
