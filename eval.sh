@@ -22,7 +22,7 @@ flags=" --bdd \
 filesToProcess $1|while read i; do
          echo "Analysing $path/openssl/$i.c"
          echo "With settings: $flags"
-         ../TypeChef/cRefactor.sh $path/openssl/$i.c $flags
+         ../Morpheus/morpheus.sh $path/openssl/$i.c $flags
          echo "Verifiying $path/result/$i"
 	 openssl/verify.sh $path/result/$i.c
          done
