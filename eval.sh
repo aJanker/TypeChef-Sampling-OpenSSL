@@ -6,12 +6,11 @@ cd $path
 
 filesToProcess() {
   local listFile=$path/openssl_files
-  cat $listFile
-#  | sed -n "${1}~8p" 
+  cat $listFile | sed -n "${1}~8p"
 }
 
 flags=" --bdd \
-  	--study openssl --reuseAST --refPrep --refLink $path/CLinking.interface \
+  	--study openssl --reuseAST --refEval rename --refLink $path/CLinking.interface \
         -I $path/openssl \
 	 -I $path/openssl/include
 	-I $path/openssl/include/openssl
