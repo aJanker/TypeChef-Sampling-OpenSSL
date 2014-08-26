@@ -10,7 +10,7 @@ filesToProcess() {
 }
 
 flags=" --bdd \
-  	--study openssl --reuseAST --refEval extract --refLink $path/CLinking.interface \
+  	--study openssl --reuseAST --refEval inline \
         -I $path/openssl \
 	 -I $path/openssl/include
 	-I $path/openssl/include/openssl
