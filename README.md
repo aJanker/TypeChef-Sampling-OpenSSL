@@ -21,3 +21,6 @@ In order to show a GUI and refactor a single file of this case study "ide-like" 
 
 
 Good luck. In case of problems contact [me](mailto:janker@fim.uni-passau.de).
+
+This case study is published as open source under LGPL 3.0. See [LICENSE](LICENSE.md).
+The included source code of [OpenSSL](https://www.openssl.org/) is published as open source.  See [LICENSE](https://www.openssl.org/source/license.html) for details.
