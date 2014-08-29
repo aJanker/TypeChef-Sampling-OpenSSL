@@ -12,11 +12,14 @@ AES_xts_encrypt
 DESX_CBC_KEY
 EC_GFp_nistp224_method
 ENGINE_load_4758cca
+ENGINE_load_aep
 ENGINE_load_atalla
+ENGINE_load_gost
 ENGINE_load_padlock
 ENGINE_load_ubsec
 EVP_BF_KEY
 EVP_CAMELLIA_KEY
+EVP_CAST_KEY
 EVP_RC2_KEY
 EVP_RC4_KEY
 GOST_CLIENT_KEY_EXCHANGE_PARAMS
@@ -85,6 +88,7 @@ ssl3_ctx_ctrl
 ssl3_free
 ssl3_get_cipher
 ssl3_new
+ssl_cipher_get_evp
 ssl_init_wbio_buffer
 ssl_new
 ssl_set_pkey
