@@ -1,3 +1,4 @@
+DESX_CBC_KEY
 ${PREFIX}_cbc_encrypt
 ${PREFIX}_decrypt
 ${PREFIX}_encrypt
