@@ -1,3 +1,4 @@
+ENGINE_load_padlock
 DESX_CBC_KEY
 ${PREFIX}_cbc_encrypt
 ${PREFIX}_decrypt
