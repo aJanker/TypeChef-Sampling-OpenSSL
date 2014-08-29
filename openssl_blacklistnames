@@ -1,3 +1,7 @@
+ENGINE_load_cswift
+HWCryptoHook_Mutex
+EVP_SEED_KEY
+ks1
 ${PREFIX}_cbc_encrypt
 ${PREFIX}_decrypt
 ${PREFIX}_encrypt
@@ -78,6 +82,8 @@ ssl3_ctx_ctrl
 ssl3_free
 ssl3_get_cipher
 ssl3_new
+ssl3_get_cipher_by_char
+ssl3_num_ciphers
 ssl_init_wbio_buffer
 ssl_new
 ssl_set_pkey
