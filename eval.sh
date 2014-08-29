@@ -6,11 +6,12 @@ cd $path
 
 filesToProcess() {
   local listFile=$path/openssl_files
-  cat $listFile | sed -n "${1}~8p"
+  cat $listFile
+#  cat $listFile | sed -n "${1}~8p"
 }
 
 flags=" --bdd \
-  	--study openssl --reuseAST --refEval inline \
+  	--study openssl --reuseAST --refEval extract --refLink $path/CLinking.interface \
         -I $path/openssl \
 	 -I $path/openssl/include
 	-I $path/openssl/include/openssl
@@ -19,7 +20,7 @@ flags=" --bdd \
 	--include $path/openssl/partial_configuration.h \
 	--recordTiming --parserstatistics --lexNoStdout"
 
-filesToProcess $1|while read i; do
+filesToProcess|while read i; do
          echo "Analysing $path/openssl/$i.c"
          echo "With settings: $flags"
          ../Morpheus/morpheus.sh $path/openssl/$i.c $flags
