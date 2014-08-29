@@ -11,7 +11,8 @@ AES_xts_decrypt
 AES_xts_encrypt
 ENGINE_load_atalla
 EVP_RC4_KEY
-OPENSSL_Uplink#
+OPENSSL_Uplink
+ssl_init_wbio_buffer
 RC4
 RC4_options
 RC4_set_key
