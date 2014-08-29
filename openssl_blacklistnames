@@ -68,6 +68,14 @@ sha256_block_data_order
 sha512_block_data_order
 ssl3_accept
 ssl3_connect
+tls1_change_cipher_state
+tls1_final_finish_mac
+tls1_export_keying_material
+ssl3_new
+ssl3_clear
+ssl3_free
+ssl3_ctrl
+ssl3_get_cipher
 ssl_new
 ssl_set_pkey
 ssl_undefined_function
