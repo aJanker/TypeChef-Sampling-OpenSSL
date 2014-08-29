@@ -11,11 +11,15 @@ AES_xts_decrypt
 AES_xts_encrypt
 DESX_CBC_KEY
 EC_GFp_nistp224_method
+ENGINE_load_4758cca
 ENGINE_load_atalla
 ENGINE_load_padlock
 ENGINE_load_ubsec
 EVP_BF_KEY
+EVP_CAMELLIA_KEY
+EVP_RC2_KEY
 EVP_RC4_KEY
+GOST_CLIENT_KEY_EXCHANGE_PARAMS
 OPENSSL_Uplink
 OPENSSL_cpuid_setup
 RC4
