@@ -1,3 +1,5 @@
+OPENSSL_cpuid_setup
+EC_GFp_nistp224_method
 ${PREFIX}_cbc_encrypt
 ${PREFIX}_decrypt
 ${PREFIX}_encrypt
