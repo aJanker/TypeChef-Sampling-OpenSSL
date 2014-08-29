@@ -1,5 +1,3 @@
-ENGINE_load_padlock
-DESX_CBC_KEY
 ${PREFIX}_cbc_encrypt
 ${PREFIX}_decrypt
 ${PREFIX}_encrypt
@@ -11,8 +9,11 @@ AES_decrypt
 AES_encrypt
 AES_xts_decrypt
 AES_xts_encrypt
+DESX_CBC_KEY
 EC_GFp_nistp224_method
 ENGINE_load_atalla
+ENGINE_load_padlock
+ENGINE_load_ubsec
 EVP_BF_KEY
 EVP_RC4_KEY
 OPENSSL_Uplink
@@ -84,6 +85,7 @@ ssl_init_wbio_buffer
 ssl_new
 ssl_set_pkey
 ssl_undefined_function
+ssl_verify_cert_chain
 tls1_alert_code
 tls1_cert_verify_mac
 tls1_change_cipher_state
