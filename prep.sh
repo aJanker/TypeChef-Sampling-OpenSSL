@@ -8,14 +8,15 @@ cd $path
 
 #make 2>&1 | tee makelog
 
-cd $path
+#cd $path
 
 filesToProcess() {
   local listFile=$path/openssl_files
-  cat $listFile | sed -n "${1}~8p" 
+  cat $listFile
+# cat $listFile | sed -n "${1}~8p" 
 }
-#echo "Generating interface"
-# ../Morpheus/morpheus.sh $path/openssl/ssl/t1_meth.c --study openssl --writeProjectInterface
+echo "Generating interface"
+../Morpheus/morpheus.sh $path/openssl/ssl/t1_meth.c --study openssl --writeProjectInterface
 
 flags=" --bdd \
   	--study openssl --reuseAST --refPrep --refLink $path/CLinking.interface \
