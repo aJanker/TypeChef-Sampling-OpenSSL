@@ -1,7 +1,7 @@
 Morpheus-OpenSSLEvaluation
 ===========================
 
-This project contains all evaluation-related files for the OpenSSL 1.18.5 case study using the variability-aware C refactoring engine [Morpheus](https://github.com/joliebig/Morpheus).
+This project contains all evaluation-related files for the OpenSSL case study using the variability-aware C refactoring engine [Morpheus](https://github.com/joliebig/Morpheus).
 
 
 Installation and Usage
@@ -16,7 +16,7 @@ If you want to start the OpenSSL evaluation of the refactoring engine [Morpheus]
 
     cd openssl
     ./config
-    sed -i.bak s+CC=.*+"CC= $(pwd)/mygcc"+g Makefile
+    sed -i.bak s+^CC=.*+"CC= $(pwd)/mygcc"+g Makefile
     make
     cd ..
 
