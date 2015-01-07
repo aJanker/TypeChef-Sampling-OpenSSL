@@ -39,13 +39,12 @@ baseParam="
 	-I /usr/include 
 	--platfromHeader    $ABSPATH/platform.h \
 	--openFeat          $ABSPATH/openfeatures.txt \
-	--featureModelFExpr $ABSPATH/fm.txt \
-	--typeSystemFeatureModelDimacs $ABSPATH/OpenSSL.dimacs \
+	--featureModelDimacs $ABSPATH/OpenSSL.dimacs \
 	--include $ABSPATH/partial_configuration.h \
-	--serializeAST \
-	--interface --debugInterface \
+	--serializeAST --simplifyFM $ABSPATH/featuremodel \
+	-A doublefree -A xfree -A uninitializedmemory -A casetermination -A danglingswitchcode -A checkstdlibfuncreturn -A deadstore -A interactiondegree \
 	--recordTiming --parserstatistics --lexNoStdout \
-	--writePI $FILTEREDPARAMS "
+	$FILTEREDPARAMS "
 
 # run typechef only in case we have a c file
 if [[ -n $FNAME ]];
@@ -56,7 +55,7 @@ then
 	# create the serialized AST in the first run
 	# apply sampling and family-based analysis for each strategy afterwards
 	# in a single run
-	$ABSPATH/../../Morpheus/morpheus.sh \
+	$ABSPATH/../../TypeChef/typechef.sh \
 		$baseParam \
 		$FNAME
 		2> "$outErr" | tee -a "$outDbg"
