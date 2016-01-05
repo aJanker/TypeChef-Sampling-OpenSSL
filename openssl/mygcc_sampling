@@ -44,8 +44,7 @@ baseParam="
 	--openFeat          $ABSPATH/openfeatures.txt \
 	--featureModelDimacs $ABSPATH/OpenSSL.dimacs \
 	--include $ABSPATH/partial_configuration.h \
-	--serializeAST --simplifyFM $ABSPATH/featuremodel \
-	-A doublefree -A xfree -A uninitializedmemory -A casetermination -A danglingswitchcode -A checkstdlibfuncreturn -A deadstore -A interactiondegree \
+	--reuseAST \
 	--recordTiming --parserstatistics --lexNoStdout \
 	$FILTEREDPARAMS "
 
@@ -54,7 +53,7 @@ if [[ -f $FNAME ]];
 then
 
 	echo "Starting TypeChef"
-	sbatch -p chimaira  -A spl -n 1 -c 2 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /home/janker/clusterScripts/ossl_vaa.sh $FNAME $baseParam
+	sbatch -p chimaira  -A spl -n 1 -c 2 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /home/janker/clusterScripts/ossl_sampling.sh $FNAME $baseParam
 
 	# TypeChef resides next to TypeChef-<projectname> two levels up
 	# create the serialized AST in the first run
