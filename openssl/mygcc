@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ABSPATH=$(cd "$(dirname "$0")"; pwd)
-
 echo ""
 echo ""
 echo "-=== ALL PARAMS ===-"
@@ -14,6 +13,10 @@ FNAME=`$ABSPATH/filtername $@ | tr -d ' '`
 
 FNAME=`pwd`/$FNAME
 
+ABSPATH=$(echo $ABSPATH | sed s/scratch/local/g)
+
+FILTEREDPARAMS=$(echo $FILTEREDPARAMS | sed s/scratch/local/g)
+FNAME=$(echo $FNAME | sed s/scratch/local/g)
 
 echo $FILTEREDPARAMS
 echo filename "$FNAME"
@@ -51,14 +54,12 @@ if [[ -n $FNAME ]];
 then
 
 	echo "Starting TypeChef"
+	sbatch -p chimaira  -A spl -n 1 -c 2 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /home/janker/clusterScripts/ossl_vaa.sh $FNAME $baseParam
+
 	# TypeChef resides next to TypeChef-<projectname> two levels up
 	# create the serialized AST in the first run
 	# apply sampling and family-based analysis for each strategy afterwards
 	# in a single run
-	$ABSPATH/../../TypeChef/typechef.sh \
-		$baseParam \
-		$FNAME
-		2> "$outErr" | tee -a "$outDbg"
 fi
 
 echo "Finished"
