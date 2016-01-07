@@ -12,6 +12,7 @@ FILTEREDPARAMS=`$ABSPATH/filterargs $@`
 FNAME=`$ABSPATH/filtername $@ | tr -d ' '`
 
 FNAME=`pwd`/$FNAME
+FNAMEORG=`pwd`/$FNAME
 
 ABSPATH=$(echo $ABSPATH | sed s/scratch/local/g)
 
@@ -44,17 +45,17 @@ baseParam="
 	--openFeat          $ABSPATH/openfeatures.txt \
 	--featureModelDimacs $ABSPATH/OpenSSL.dimacs \
 	--include $ABSPATH/partial_configuration.h \
-	--serializeAST --simplifyFM $ABSPATH/featuremodel \
+	--serializeAST  \
 	-A doublefree -A xfree -A uninitializedmemory -A casetermination -A danglingswitchcode -A checkstdlibfuncreturn -A deadstore -A interactiondegree \
 	--recordTiming --parserstatistics --lexNoStdout \
 	$FILTEREDPARAMS "
 
 # run typechef only in case we have a c file
-if [[ -f $FNAME ]];
+if [[ -f $FNAMEORG ]];
 then
 
 	echo "Starting TypeChef"
-	sbatch -p chimaira  -A spl -n 1 -c 2 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /home/janker/clusterScripts/ossl_vaa.sh $FNAME $baseParam
+	sbatch -p chimaira  -A spl -n 1 -c 2 --time=06:00:00  --mem_bind=local --output=/home/janker/chimaira_update --error=/home/janker/chimaira_update  /home/janker/clusterScripts/ossl_vaa.sh $FNAME $baseParam
 
 	# TypeChef resides next to TypeChef-<projectname> two levels up
 	# create the serialized AST in the first run
