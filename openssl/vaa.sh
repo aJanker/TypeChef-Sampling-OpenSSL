@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ABSPATH=$(cd "$(dirname "$0")"; pwd)
 
 if [ $# -lt 1 ]; then
   echo "Not enough arguments!" >&2
@@ -13,6 +14,7 @@ if [ -z "$inp" ]; then
   exit 1
 fi
 
+cd $(dirname $inp)
 
 outBase="$(dirname $inp)/$(basename $inp .c)"
 copyBase=$(echo $outBase | sed s/local/scratch/g)
@@ -34,7 +36,7 @@ copyErrorStmtDegree="$copyBase.stmt.error.degree.gz"
 echo "==Partially preprocessing $inp"
 echo $partialPreprocFlags
 
-bash -c "time ../TypeChef/typechef.sh \
+bash -c "time $ABSPATH/../../TypeChef/typechef.sh \
   $(for arg in "$@"; do echo -n "\"$arg\" "; done) \
   '$inp' 2> '$outErr' |tee '$outDbg'" \
   2> "$outTime" || true
@@ -54,8 +56,6 @@ mv ${outBase}.tunit ${copyBase}.tunit
 
 rm ${outBase}.err
 rm ${outBase}.dbg
-rm ${outBase}.time
-rm ${outBase}.astimes
 rm $outStmtDegree
 rm $outErrorStmtDegree
 

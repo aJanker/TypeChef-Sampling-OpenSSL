@@ -55,6 +55,8 @@ if [[ -f $FNAMEORG ]];
 then
 
 	echo "Starting TypeChef"
+	echo "$baseParam"
+	echo "$FNAME"
 	sbatch -p chimaira  -A spl -n 1 -c 2 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /home/janker/clusterScripts/ossl_vaa.sh $FNAME $baseParam
 
 	# TypeChef resides next to TypeChef-<projectname> two levels up
