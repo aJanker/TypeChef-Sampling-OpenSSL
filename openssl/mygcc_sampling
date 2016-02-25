@@ -54,7 +54,7 @@ if [[ -f $FNAMEORG ]];
 then
 
 	echo "Starting TypeChef"
-	sbatch -p chimaira  -A spl -n 1 -c 2 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null   /scratch/janker/openssl/Morpheus-OpenSSLEvaluation/openssl/sampling.sh  $FNAME $baseParam
+	sbatch -p chimaira  -A spl -n 1 -c 2 --exclude=chimaira17 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null   /scratch/janker/openssl/Morpheus-OpenSSLEvaluation/openssl/sampling.sh  $FNAME $baseParam
 
 	# TypeChef resides next to TypeChef-<projectname> two levels up
 	# create the serialized AST in the first run
