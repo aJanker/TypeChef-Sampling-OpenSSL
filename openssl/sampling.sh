@@ -15,6 +15,7 @@ if [ -z "$inp" ]; then
 fi
 
 
+echo `pwd`
 outBase="$(dirname $inp)/$(basename $inp .c)"
 copyBase=$(echo $outBase | sed s/local/scratch/g)
 
@@ -29,7 +30,7 @@ copyBase=$(echo $outBase | sed s/local/scratch/g)
 
 # single conf
     extraFlagsSC="--singleconf --rootfolder /scratch/janker/openssl"
-    ./jcpp_sampling.sh $inp "$@" $extraFlagsSC
+    /scratch/janker/openssl/Morpheus-OpenSSLEvaluation/openssl/jcpp_sampling.sh $inp "$@" $extraFlagsSC
     gzip -c ${outBase}.err > ${copyBase}_singleconf.err.gz
     gzip -c ${outBase}.dbg > ${copyBase}_singleconf.dbg.gz
 #    mv ${outBase}.time ${copyBase}_singleconf.time
@@ -38,7 +39,7 @@ copyBase=$(echo $outBase | sed s/local/scratch/g)
 
  # pairwise
     extraFlagsPW="--pairwise --rootfolder /scratch/janker/openssl"
-    ./jcpp_sampling.sh $inp "$@" $extraFlagsPW
+    /scratch/janker/openssl/Morpheus-OpenSSLEvaluation/openssl/jcpp_sampling.sh $inp "$@" $extraFlagsPW
     gzip -c ${outBase}.err > ${copyBase}_pairwise.err.gz
     gzip -c ${outBase}.dbg > ${copyBase}_pairwise.dbg.gz
 #    mv ${outBase}.time ${copyBase}_pairwise.time
@@ -47,7 +48,7 @@ copyBase=$(echo $outBase | sed s/local/scratch/g)
 
  # code coverage nh
     extraFlagsCC="--rootfolder /scratch/janker/openssl --codecoveragenh"
-    ./jcpp_sampling.sh $inp "$@" $extraFlagsCC
+    /scratch/janker/openssl/Morpheus-OpenSSLEvaluation/openssl/jcpp_sampling.sh $inp "$@" $extraFlagsCC
     gzip -c ${outBase}.err > ${copyBase}_codecoveragenh.err.gz
     gzip -c ${outBase}.dbg > ${copyBase}_codecoveragenh.dbg.gz
 #    mv ${outBase}.time ${copyBase}_codecoveragenh.time
