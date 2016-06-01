@@ -4,7 +4,7 @@ Contains various scripts to run static analysis and sampling strategies with Typ
 
 The setup requires multiple steps. Contact me if there are any issues.
 
-## Setup & Linux source code
+## Setup & Source code
 
 The requiered source code is already included in this case study.
 
