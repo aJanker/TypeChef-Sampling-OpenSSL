@@ -57,8 +57,8 @@ then
 	echo "Starting TypeChef"
 	echo "$baseParam"
 	echo "$FNAME"
-	sbatch -p chimaira  -A spl -n 1 -c 2 --exclude=chimaira17 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /scratch/janker/TypeChef/typechef.sh $FNAME $baseParam
-
+#	sbatch -p chimaira  -A spl -n 1 -c 2 --exclude=chimaira17 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /scratch/janker/TypeChef/typechef.sh $FNAME $baseParam
+        /scratch/janker/TypeChef/typechef.sh $FNAME $baseParam
 	# TypeChef resides next to TypeChef-<projectname> two levels up
 	# create the serialized AST in the first run
 	# apply sampling and family-based analysis for each strategy afterwards
