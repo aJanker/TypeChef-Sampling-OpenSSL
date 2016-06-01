@@ -36,16 +36,15 @@ outTime="$outBase.time"
 # base parameters
 baseParam="
 	--bdd --dimacsFeaturePrefix \"\" --no-warnings \
-	-I /usr/local/include \
-	-I /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed \
-	-I /usr/lib/gcc/x86_64-linux-gnu/4.8/include \
-	-I /usr/include/x86_64-linux-gnu \
-	-I /usr/include 
+	-I ../TypeChef-GNUCHeader/x86_64-linux-gnu/4.8/include-fixed \
+	-I ../TypeChef-GNUCHeader/x86_64-linux-gnu/4.8/include \ 
+	-I ../TypeChef-GNUCHeader/usr_include/x86_64-linux-gnu \
+	-I ../TypeChef-GNUCHeader/usr_include \
 	--platfromHeader    $ABSPATH/platform.h \
 	--openFeat          $ABSPATH/openfeatures.txt \
 	--featureModelDimacs $ABSPATH/OpenSSL.dimacs \
 	--include $ABSPATH/partial_configuration.h \
-	--reuseAST  \
+	--serializeAST  \
       	-A cfginnonvoidfunction -A doublefree -A xfree -A uninitializedmemory -A casetermination -A danglingswitchcode -A checkstdlibfuncreturn -A deadstore -A interactiondegree \
 	--recordTiming --parserstatistics --lexNoStdout \
 	$FILTEREDPARAMS "
@@ -58,7 +57,7 @@ then
 	echo "$baseParam"
 	echo "$FNAME"
 #	sbatch -p chimaira  -A spl -n 1 -c 2 --exclude=chimaira17 --time=06:00:00  --mem_bind=local --output=/dev/null --error=/dev/null  /scratch/janker/TypeChef/typechef.sh $FNAME $baseParam
-        /scratch/janker/TypeChef/typechef.sh $FNAME $baseParam
+        $ABSPATH/../../TypeChef/typechef.sh $FNAME $baseParam
 	# TypeChef resides next to TypeChef-<projectname> two levels up
 	# create the serialized AST in the first run
 	# apply sampling and family-based analysis for each strategy afterwards
