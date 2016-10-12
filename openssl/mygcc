@@ -36,16 +36,15 @@ outTime="$outBase.time"
 # base parameters
 baseParam="
 	--bdd --dimacsFeaturePrefix \"\" --no-warnings \
-	-I ../TypeChef-GNUCHeader/x86_64-linux-gnu/4.8/include-fixed \
-	-I ../TypeChef-GNUCHeader/x86_64-linux-gnu/4.8/include \ 
-	-I ../TypeChef-GNUCHeader/usr_include/x86_64-linux-gnu \
-	-I ../TypeChef-GNUCHeader/usr_include \
+	-I $ABSPATH/../../TypeChef-GNUCHeader/x86_64-linux-gnu/4.8/include-fixed \
+	-I $ABSPATH/../../TypeChef-GNUCHeader/x86_64-linux-gnu/4.8/include \
+	-I $ABSPATH/../../TypeChef-GNUCHeader/usr_include/x86_64-linux-gnu \
+	-I $ABSPATH/../../TypeChef-GNUCHeader/usr_include \
 	--platfromHeader    $ABSPATH/platform.h \
 	--openFeat          $ABSPATH/openfeatures.txt \
 	--featureModelDimacs $ABSPATH/OpenSSL.dimacs \
 	--include $ABSPATH/partial_configuration.h \
-	--serializeAST  \
-      	-A cfginnonvoidfunction -A doublefree -A xfree -A uninitializedmemory -A casetermination -A danglingswitchcode -A checkstdlibfuncreturn -A deadstore -A interactiondegree \
+	--writePI --serializeAST --interface \
 	--recordTiming --parserstatistics --lexNoStdout \
 	$FILTEREDPARAMS "
 
