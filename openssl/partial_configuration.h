@@ -109,7 +109,10 @@
 
 // set default values for several "features"
 #define _BITS_STDIO_LOCK_H
+#define OPENSSL_NO_ERR
 
+#define OPENSSL_NO_ASM
+#undef AES_ASM
 #undef OPENSSL_NO_AES
 #undef OPENSSL_NO_BIO
 #undef OPENSSL_NO_COMP
