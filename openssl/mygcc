@@ -45,7 +45,7 @@ baseParam="
 	--featureModelDimacs $ABSPATH/OpenSSL.dimacs \
 	--include $ABSPATH/partial_configuration.h \
 	--writePI --serializeAST --interface \
-	--recordTiming --parserstatistics --lexNoStdout \
+	--adjustLines --recordTiming --parserstatistics --lexNoStdout \
 	$FILTEREDPARAMS "
 
 # run typechef only in case we have a c file
