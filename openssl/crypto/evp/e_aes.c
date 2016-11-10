@@ -1309,5 +1309,25 @@ BLOCK_CIPHER_custom(NID_aes,128,1,12,ccm,CCM,EVP_CIPH_FLAG_FIPS|CUSTOM_FLAGS)
 BLOCK_CIPHER_custom(NID_aes,192,1,12,ccm,CCM,EVP_CIPH_FLAG_FIPS|CUSTOM_FLAGS)
 BLOCK_CIPHER_custom(NID_aes,256,1,12,ccm,CCM,EVP_CIPH_FLAG_FIPS|CUSTOM_FLAGS)
 
+EVP_CIPHER *aes_256_cbc_spl() {
+EVP_CIPHER* ctx;
+
+ctx->nid = 427;
+ctx->block_size = 16;
+ctx->key_len = 256/8;
+ctx->iv_len = 16;
+ctx->flags = 0x4000|0x1000|0x2;
+ctx->init = aes_init_key;
+ctx->do_cipher = aes_cbc_cipher;
+ctx->cleanup = ((void *)0);
+ctx->ctx_size = sizeof(EVP_AES_KEY);
+ctx->set_asn1_parameters = ((void *)0);
+ctx->get_asn1_parameters = ((void *)0);
+ctx->ctrl = ((void *)0);
+ctx->app_data = ((void *)0);
+
+return ctx;
+}
+
 #endif
 #endif
